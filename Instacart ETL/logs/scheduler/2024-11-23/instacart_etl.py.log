@@ -1,0 +1,266 @@
+[2024-11-23T12:54:21.980+0000] {processor.py:186} INFO - Started process (PID=1550) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:54:21.984+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T12:54:22.001+0000] {logging_mixin.py:190} INFO - [2024-11-23T12:54:21.997+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:54:32.260+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:54:32.281+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 10.400 seconds
+[2024-11-23T12:55:02.516+0000] {processor.py:186} INFO - Started process (PID=1568) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:55:02.517+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T12:55:02.519+0000] {logging_mixin.py:190} INFO - [2024-11-23T12:55:02.518+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:55:03.170+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:55:03.183+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.674 seconds
+[2024-11-23T12:55:33.392+0000] {processor.py:186} INFO - Started process (PID=1580) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:55:33.393+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T12:55:33.395+0000] {logging_mixin.py:190} INFO - [2024-11-23T12:55:33.395+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:55:33.872+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:55:33.883+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.499 seconds
+[2024-11-23T12:56:04.096+0000] {processor.py:186} INFO - Started process (PID=1593) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:56:04.097+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T12:56:04.099+0000] {logging_mixin.py:190} INFO - [2024-11-23T12:56:04.098+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:56:04.552+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:56:04.563+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.473 seconds
+[2024-11-23T12:56:34.765+0000] {processor.py:186} INFO - Started process (PID=1605) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:56:34.766+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T12:56:34.767+0000] {logging_mixin.py:190} INFO - [2024-11-23T12:56:34.767+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:56:35.241+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:56:35.257+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.497 seconds
+[2024-11-23T12:57:05.498+0000] {processor.py:186} INFO - Started process (PID=1617) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:57:05.499+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T12:57:05.501+0000] {logging_mixin.py:190} INFO - [2024-11-23T12:57:05.500+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:57:05.954+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:57:05.965+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.475 seconds
+[2024-11-23T12:57:36.161+0000] {processor.py:186} INFO - Started process (PID=1629) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:57:36.162+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T12:57:36.164+0000] {logging_mixin.py:190} INFO - [2024-11-23T12:57:36.164+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:57:36.736+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T12:57:36.749+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.596 seconds
+[2024-11-23T13:00:27.276+0000] {processor.py:186} INFO - Started process (PID=203) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:00:27.282+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:00:27.294+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:00:27.293+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:00:32.211+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:00:32.226+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 5.015 seconds
+[2024-11-23T13:01:02.496+0000] {processor.py:186} INFO - Started process (PID=221) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:01:02.499+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:01:02.525+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:01:02.524+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:01:03.808+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:01:03.822+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 1.350 seconds
+[2024-11-23T13:01:34.046+0000] {processor.py:186} INFO - Started process (PID=233) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:01:34.048+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:01:34.054+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:01:34.054+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:01:34.632+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:01:34.644+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.604 seconds
+[2024-11-23T13:02:04.857+0000] {processor.py:186} INFO - Started process (PID=245) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:02:04.858+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:02:04.861+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:02:04.861+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:02:05.317+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:02:05.328+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.476 seconds
+[2024-11-23T13:02:35.547+0000] {processor.py:186} INFO - Started process (PID=257) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:02:35.549+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:02:35.551+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:02:35.551+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:02:36.804+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:02:36.831+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 1.294 seconds
+[2024-11-23T13:02:42.604+0000] {processor.py:186} INFO - Started process (PID=263) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:02:42.605+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:02:42.607+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:02:42.607+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:02:43.180+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:02:43.191+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.593 seconds
+[2024-11-23T13:03:13.407+0000] {processor.py:186} INFO - Started process (PID=275) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:03:13.409+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:03:13.411+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:03:13.411+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:03:13.880+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:03:13.891+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.491 seconds
+[2024-11-23T13:03:23.995+0000] {processor.py:186} INFO - Started process (PID=281) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:03:23.996+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:03:23.999+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:03:23.999+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:03:24.586+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:03:24.600+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.611 seconds
+[2024-11-23T13:03:54.678+0000] {processor.py:186} INFO - Started process (PID=293) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:03:54.679+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:03:54.681+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:03:54.681+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:03:55.105+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:03:55.139+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.481 seconds
+[2024-11-23T13:04:25.348+0000] {processor.py:186} INFO - Started process (PID=305) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:04:25.349+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:04:25.351+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:04:25.351+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:04:25.843+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:04:25.858+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.516 seconds
+[2024-11-23T13:04:56.087+0000] {processor.py:186} INFO - Started process (PID=318) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:04:56.088+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:04:56.091+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:04:56.091+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:04:56.573+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:04:56.589+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.508 seconds
+[2024-11-23T13:05:26.721+0000] {processor.py:186} INFO - Started process (PID=330) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:05:26.723+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:05:26.726+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:05:26.725+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:05:27.199+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:05:27.210+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.497 seconds
+[2024-11-23T13:05:31.825+0000] {processor.py:186} INFO - Started process (PID=342) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:05:31.826+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:05:31.828+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:05:31.828+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:05:31.842+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:05:31.840+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/instacart_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/instacart_etl.py", line 9
+    CSV_PATH = "C:\Users\Sigma\Downloads\instacart-market-basket-analysis\'"
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+[2024-11-23T13:05:31.843+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:05:31.868+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.049 seconds
+[2024-11-23T13:06:02.264+0000] {processor.py:186} INFO - Started process (PID=353) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:06:02.266+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:06:02.268+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:06:02.268+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:06:02.284+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:06:02.282+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/instacart_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/instacart_etl.py", line 9
+    CSV_PATH = "C:\Users\Sigma\Downloads\instacart-market-basket-analysis\'"
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+[2024-11-23T13:06:02.284+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:06:02.305+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.048 seconds
+[2024-11-23T13:06:32.491+0000] {processor.py:186} INFO - Started process (PID=364) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:06:32.492+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:06:32.495+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:06:32.495+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:06:32.509+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:06:32.508+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/instacart_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/instacart_etl.py", line 9
+    CSV_PATH = "C:\Users\Sigma\Downloads\instacart-market-basket-analysis\'"
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+[2024-11-23T13:06:32.510+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:06:32.534+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.049 seconds
+[2024-11-23T13:06:42.644+0000] {processor.py:186} INFO - Started process (PID=369) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:06:42.645+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:06:42.648+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:06:42.648+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:06:43.547+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:06:43.561+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.927 seconds
+[2024-11-23T13:07:13.768+0000] {processor.py:186} INFO - Started process (PID=381) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:07:13.769+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:07:13.772+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:07:13.771+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:07:14.269+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:07:14.289+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.527 seconds
+[2024-11-23T13:07:17.805+0000] {processor.py:186} INFO - Started process (PID=387) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:07:17.806+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:07:17.808+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:07:17.808+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:07:18.255+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:07:18.266+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.467 seconds
+[2024-11-23T13:07:48.493+0000] {processor.py:186} INFO - Started process (PID=400) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:07:48.494+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:07:48.497+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:07:48.497+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:07:49.237+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:07:49.265+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.778 seconds
+[2024-11-23T13:08:19.467+0000] {processor.py:186} INFO - Started process (PID=412) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:08:19.468+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:08:19.471+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:08:19.470+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:08:20.011+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:08:20.022+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.561 seconds
+[2024-11-23T13:08:50.235+0000] {processor.py:186} INFO - Started process (PID=424) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:08:50.236+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:08:50.238+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:08:50.238+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:08:50.686+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:08:50.696+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.467 seconds
+[2024-11-23T13:09:20.810+0000] {processor.py:186} INFO - Started process (PID=436) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:09:20.811+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:09:20.813+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:09:20.813+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:09:21.363+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:09:21.374+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.570 seconds
+[2024-11-23T13:09:51.582+0000] {processor.py:186} INFO - Started process (PID=448) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:09:51.584+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:09:51.586+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:09:51.586+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:09:52.030+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:09:52.042+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.466 seconds
+[2024-11-23T13:10:22.246+0000] {processor.py:186} INFO - Started process (PID=460) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:10:22.247+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:10:22.250+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:10:22.249+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:10:22.656+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:10:22.666+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.426 seconds
+[2024-11-23T13:10:52.889+0000] {processor.py:186} INFO - Started process (PID=472) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:10:52.892+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:10:52.897+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:10:52.897+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:10:55.773+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:10:55.786+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 2.908 seconds
+[2024-11-23T13:11:26.357+0000] {processor.py:186} INFO - Started process (PID=484) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:11:26.358+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:11:26.547+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:11:26.546+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:11:29.619+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:11:29.639+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 3.289 seconds
+[2024-11-23T13:11:59.855+0000] {processor.py:186} INFO - Started process (PID=496) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:11:59.856+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:11:59.859+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:11:59.858+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:12:00.721+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:12:00.736+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.887 seconds
+[2024-11-23T13:12:30.956+0000] {processor.py:186} INFO - Started process (PID=508) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:12:30.957+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:12:30.961+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:12:30.960+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:12:31.535+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:12:31.549+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.600 seconds
+[2024-11-23T13:13:01.787+0000] {processor.py:186} INFO - Started process (PID=527) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:13:01.789+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:13:01.792+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:13:01.792+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:13:02.423+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:13:02.438+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.658 seconds
+[2024-11-23T13:13:32.667+0000] {processor.py:186} INFO - Started process (PID=539) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:13:32.669+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:13:32.672+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:13:32.672+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:13:33.191+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:13:33.202+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.543 seconds
+[2024-11-23T13:14:03.430+0000] {processor.py:186} INFO - Started process (PID=551) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:14:03.431+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:14:03.434+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:14:03.433+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:14:03.917+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:14:03.929+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.506 seconds
+[2024-11-23T13:14:34.025+0000] {processor.py:186} INFO - Started process (PID=563) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:14:34.026+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:14:34.029+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:14:34.028+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:14:34.514+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:14:34.525+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.506 seconds
+[2024-11-23T13:15:04.736+0000] {processor.py:186} INFO - Started process (PID=575) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:15:04.737+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:15:04.740+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:15:04.740+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:15:05.341+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:15:05.353+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.622 seconds
+[2024-11-23T13:15:35.542+0000] {processor.py:186} INFO - Started process (PID=587) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:15:35.543+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:15:35.546+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:15:35.546+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:15:35.984+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:15:35.994+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.459 seconds
+[2024-11-23T13:16:06.213+0000] {processor.py:186} INFO - Started process (PID=599) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:16:06.214+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:16:06.217+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:16:06.217+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:16:06.762+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:16:06.775+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.573 seconds
+[2024-11-23T13:16:36.936+0000] {processor.py:186} INFO - Started process (PID=611) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:16:36.937+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:16:36.940+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:16:36.940+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:16:37.377+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:16:37.388+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.459 seconds
+[2024-11-23T13:17:07.601+0000] {processor.py:186} INFO - Started process (PID=623) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:17:07.602+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:17:07.604+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:17:07.604+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:17:08.036+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:17:08.047+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.453 seconds
+[2024-11-23T13:17:38.275+0000] {processor.py:186} INFO - Started process (PID=635) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:17:38.276+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T13:17:38.280+0000] {logging_mixin.py:190} INFO - [2024-11-23T13:17:38.280+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:17:39.039+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T13:17:39.050+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 0.784 seconds
+[2024-11-23T16:17:52.025+0000] {processor.py:186} INFO - Started process (PID=641) to work on /opt/airflow/dags/instacart_etl.py
+[2024-11-23T16:17:52.027+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl.py for tasks to queue
+[2024-11-23T16:17:52.041+0000] {logging_mixin.py:190} INFO - [2024-11-23T16:17:52.040+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T16:17:53.168+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/instacart_etl.py
+[2024-11-23T16:17:53.197+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl.py took 1.193 seconds

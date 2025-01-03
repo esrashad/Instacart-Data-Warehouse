@@ -1,0 +1,18 @@
+[2024-12-13T15:57:40.489+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-13T15:57:40.521+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_test.etl_dim_orders manual__2024-12-13T15:56:46.321554+00:00 [queued]>
+[2024-12-13T15:57:40.540+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_test.etl_dim_orders manual__2024-12-13T15:56:46.321554+00:00 [queued]>
+[2024-12-13T15:57:40.542+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-13T15:57:40.573+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): etl_dim_orders> on 2024-12-13 15:56:46.321554+00:00
+[2024-12-13T15:57:40.612+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=2173) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-12-13T15:57:40.610+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_test', 'etl_dim_orders', 'manual__2024-12-13T15:56:46.321554+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/test_etl_dag.py', '--cfg-path', '/tmp/tmpoul_8psr']
+[2024-12-13T15:57:40.615+0000] {standard_task_runner.py:72} INFO - Started process 2186 to run task
+[2024-12-13T15:57:40.615+0000] {standard_task_runner.py:105} INFO - Job 40: Subtask etl_dim_orders
+[2024-12-13T15:57:40.753+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_test.etl_dim_orders manual__2024-12-13T15:56:46.321554+00:00 [running]> on host abc9f5fcc43f
+[2024-12-13T15:57:40.917+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_test' AIRFLOW_CTX_TASK_ID='etl_dim_orders' AIRFLOW_CTX_EXECUTION_DATE='2024-12-13T15:56:46.321554+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-13T15:56:46.321554+00:00'
+[2024-12-13T15:57:40.920+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-13T16:09:20.362+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-13T16:09:20.826+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-13T16:09:20.832+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=etl_test, task_id=etl_dim_orders, run_id=manual__2024-12-13T15:56:46.321554+00:00, execution_date=20241213T155646, start_date=20241213T155740, end_date=20241213T160920
+[2024-12-13T16:09:21.009+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-13T16:09:21.148+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-13T16:09:21.155+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

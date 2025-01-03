@@ -1,0 +1,160 @@
+[2024-12-11T10:59:25.527+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-11T10:59:25.562+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instacart_pl.etl_dim_aisle manual__2024-12-11T10:59:22.292652+00:00 [queued]>
+[2024-12-11T10:59:25.579+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instacart_pl.etl_dim_aisle manual__2024-12-11T10:59:22.292652+00:00 [queued]>
+[2024-12-11T10:59:25.581+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-11T10:59:25.619+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): etl_dim_aisle> on 2024-12-11 10:59:22.292652+00:00
+[2024-12-11T10:59:25.645+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=1676) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-12-11T10:59:25.648+0000] {standard_task_runner.py:72} INFO - Started process 1684 to run task
+[2024-12-11T10:59:25.642+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'instacart_pl', 'etl_dim_aisle', 'manual__2024-12-11T10:59:22.292652+00:00', '--job-id', '122', '--raw', '--subdir', 'DAGS_FOLDER/test_etl_dag.py', '--cfg-path', '/tmp/tmp32phanmm']
+[2024-12-11T10:59:25.657+0000] {standard_task_runner.py:105} INFO - Job 122: Subtask etl_dim_aisle
+[2024-12-11T10:59:25.807+0000] {task_command.py:467} INFO - Running <TaskInstance: instacart_pl.etl_dim_aisle manual__2024-12-11T10:59:22.292652+00:00 [running]> on host 751be410a86b
+[2024-12-11T10:59:25.998+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='instacart_pl' AIRFLOW_CTX_TASK_ID='etl_dim_aisle' AIRFLOW_CTX_EXECUTION_DATE='2024-12-11T10:59:22.292652+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-11T10:59:22.292652+00:00'
+[2024-12-11T10:59:26.000+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-11T10:59:26.032+0000] {base.py:84} INFO - Retrieving connection 'mssql_default'
+[2024-12-11T10:59:26.099+0000] {logging_mixin.py:190} INFO - Initial DataFrame from /opt/***/data/aisles.csv/aisles.csv:
+   aisle_id                       aisle
+0         1       prepared soups salads
+1         2           specialty cheeses
+2         3         energy granola bars
+3         4               instant foods
+4         5  marinades meat preparation
+[2024-12-11T10:59:26.101+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=1, Name=prepared soups salads, FK Values={}
+[2024-12-11T10:59:26.110+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=2, Name=specialty cheeses, FK Values={}
+[2024-12-11T10:59:26.112+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=3, Name=energy granola bars, FK Values={}
+[2024-12-11T10:59:26.113+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=4, Name=instant foods, FK Values={}
+[2024-12-11T10:59:26.115+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=5, Name=marinades meat preparation, FK Values={}
+[2024-12-11T10:59:26.117+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=6, Name=other, FK Values={}
+[2024-12-11T10:59:26.118+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=7, Name=packaged meat, FK Values={}
+[2024-12-11T10:59:26.121+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=8, Name=bakery desserts, FK Values={}
+[2024-12-11T10:59:26.124+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=9, Name=pasta sauce, FK Values={}
+[2024-12-11T10:59:26.127+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=10, Name=kitchen supplies, FK Values={}
+[2024-12-11T10:59:26.128+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=11, Name=cold flu allergy, FK Values={}
+[2024-12-11T10:59:26.129+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=12, Name=fresh pasta, FK Values={}
+[2024-12-11T10:59:26.131+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=13, Name=prepared meals, FK Values={}
+[2024-12-11T10:59:26.133+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=14, Name=tofu meat alternatives, FK Values={}
+[2024-12-11T10:59:26.135+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=15, Name=packaged seafood, FK Values={}
+[2024-12-11T10:59:26.140+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=16, Name=fresh herbs, FK Values={}
+[2024-12-11T10:59:26.142+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=17, Name=baking ingredients, FK Values={}
+[2024-12-11T10:59:26.144+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=18, Name=bulk dried fruits vegetables, FK Values={}
+[2024-12-11T10:59:26.146+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=19, Name=oils vinegars, FK Values={}
+[2024-12-11T10:59:26.149+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=20, Name=oral hygiene, FK Values={}
+[2024-12-11T10:59:26.152+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=21, Name=packaged cheese, FK Values={}
+[2024-12-11T10:59:26.156+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=22, Name=hair care, FK Values={}
+[2024-12-11T10:59:26.158+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=23, Name=popcorn jerky, FK Values={}
+[2024-12-11T10:59:26.160+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=24, Name=fresh fruits, FK Values={}
+[2024-12-11T10:59:26.161+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=25, Name=soap, FK Values={}
+[2024-12-11T10:59:26.162+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=26, Name=coffee, FK Values={}
+[2024-12-11T10:59:26.164+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=27, Name=beers coolers, FK Values={}
+[2024-12-11T10:59:26.165+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=28, Name=red wines, FK Values={}
+[2024-12-11T10:59:26.167+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=29, Name=honeys syrups nectars, FK Values={}
+[2024-12-11T10:59:26.169+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=30, Name=latino foods, FK Values={}
+[2024-12-11T10:59:26.172+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=31, Name=refrigerated, FK Values={}
+[2024-12-11T10:59:26.174+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=32, Name=packaged produce, FK Values={}
+[2024-12-11T10:59:26.175+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=33, Name=kosher foods, FK Values={}
+[2024-12-11T10:59:26.177+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=34, Name=frozen meat seafood, FK Values={}
+[2024-12-11T10:59:26.178+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=35, Name=poultry counter, FK Values={}
+[2024-12-11T10:59:26.180+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=36, Name=butter, FK Values={}
+[2024-12-11T10:59:26.182+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=37, Name=ice cream ice, FK Values={}
+[2024-12-11T10:59:26.184+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=38, Name=frozen meals, FK Values={}
+[2024-12-11T10:59:26.185+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=39, Name=seafood counter, FK Values={}
+[2024-12-11T10:59:26.188+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=40, Name=dog food care, FK Values={}
+[2024-12-11T10:59:26.190+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=41, Name=cat food care, FK Values={}
+[2024-12-11T10:59:26.191+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=42, Name=frozen vegan vegetarian, FK Values={}
+[2024-12-11T10:59:26.193+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=43, Name=buns rolls, FK Values={}
+[2024-12-11T10:59:26.195+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=44, Name=eye ear care, FK Values={}
+[2024-12-11T10:59:26.197+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=45, Name=candy chocolate, FK Values={}
+[2024-12-11T10:59:26.198+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=46, Name=mint gum, FK Values={}
+[2024-12-11T10:59:26.200+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=47, Name=vitamins supplements, FK Values={}
+[2024-12-11T10:59:26.201+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=48, Name=breakfast bars pastries, FK Values={}
+[2024-12-11T10:59:26.204+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=49, Name=packaged poultry, FK Values={}
+[2024-12-11T10:59:26.207+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=50, Name=fruit vegetable snacks, FK Values={}
+[2024-12-11T10:59:26.208+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=51, Name=preserved dips spreads, FK Values={}
+[2024-12-11T10:59:26.211+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=52, Name=frozen breakfast, FK Values={}
+[2024-12-11T10:59:26.212+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=53, Name=cream, FK Values={}
+[2024-12-11T10:59:26.213+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=54, Name=paper goods, FK Values={}
+[2024-12-11T10:59:26.214+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=55, Name=shave needs, FK Values={}
+[2024-12-11T10:59:26.216+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=56, Name=diapers wipes, FK Values={}
+[2024-12-11T10:59:26.217+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=57, Name=granola, FK Values={}
+[2024-12-11T10:59:26.218+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=58, Name=frozen breads doughs, FK Values={}
+[2024-12-11T10:59:26.222+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=59, Name=canned meals beans, FK Values={}
+[2024-12-11T10:59:26.223+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=60, Name=trash bags liners, FK Values={}
+[2024-12-11T10:59:26.225+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=61, Name=cookies cakes, FK Values={}
+[2024-12-11T10:59:26.227+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=62, Name=white wines, FK Values={}
+[2024-12-11T10:59:26.228+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=63, Name=grains rice dried goods, FK Values={}
+[2024-12-11T10:59:26.230+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=64, Name=energy sports drinks, FK Values={}
+[2024-12-11T10:59:26.231+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=65, Name=protein meal replacements, FK Values={}
+[2024-12-11T10:59:26.233+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=66, Name=asian foods, FK Values={}
+[2024-12-11T10:59:26.234+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=67, Name=fresh dips tapenades, FK Values={}
+[2024-12-11T10:59:26.237+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=68, Name=bulk grains rice dried goods, FK Values={}
+[2024-12-11T10:59:26.240+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=69, Name=soup broth bouillon, FK Values={}
+[2024-12-11T10:59:26.242+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=70, Name=digestion, FK Values={}
+[2024-12-11T10:59:26.244+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=71, Name=refrigerated pudding desserts, FK Values={}
+[2024-12-11T10:59:26.245+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=72, Name=condiments, FK Values={}
+[2024-12-11T10:59:26.247+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=73, Name=facial care, FK Values={}
+[2024-12-11T10:59:26.248+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=74, Name=dish detergents, FK Values={}
+[2024-12-11T10:59:26.249+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=75, Name=laundry, FK Values={}
+[2024-12-11T10:59:26.250+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=76, Name=indian foods, FK Values={}
+[2024-12-11T10:59:26.252+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=77, Name=soft drinks, FK Values={}
+[2024-12-11T10:59:26.255+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=78, Name=crackers, FK Values={}
+[2024-12-11T10:59:26.257+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=79, Name=frozen pizza, FK Values={}
+[2024-12-11T10:59:26.259+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=80, Name=deodorants, FK Values={}
+[2024-12-11T10:59:26.260+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=81, Name=canned jarred vegetables, FK Values={}
+[2024-12-11T10:59:26.261+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=82, Name=baby accessories, FK Values={}
+[2024-12-11T10:59:26.262+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=83, Name=fresh vegetables, FK Values={}
+[2024-12-11T10:59:26.264+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=84, Name=milk, FK Values={}
+[2024-12-11T10:59:26.265+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=85, Name=food storage, FK Values={}
+[2024-12-11T10:59:26.266+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=86, Name=eggs, FK Values={}
+[2024-12-11T10:59:26.267+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=87, Name=more household, FK Values={}
+[2024-12-11T10:59:26.269+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=88, Name=spreads, FK Values={}
+[2024-12-11T10:59:26.272+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=89, Name=salad dressing toppings, FK Values={}
+[2024-12-11T10:59:26.275+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=90, Name=cocoa drink mixes, FK Values={}
+[2024-12-11T10:59:26.277+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=91, Name=soy lactosefree, FK Values={}
+[2024-12-11T10:59:26.279+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=92, Name=baby food formula, FK Values={}
+[2024-12-11T10:59:26.280+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=93, Name=breakfast bakery, FK Values={}
+[2024-12-11T10:59:26.281+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=94, Name=tea, FK Values={}
+[2024-12-11T10:59:26.283+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=95, Name=canned meat seafood, FK Values={}
+[2024-12-11T10:59:26.284+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=96, Name=lunch meat, FK Values={}
+[2024-12-11T10:59:26.288+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=97, Name=baking supplies decor, FK Values={}
+[2024-12-11T10:59:26.291+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=98, Name=juice nectars, FK Values={}
+[2024-12-11T10:59:26.293+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=99, Name=canned fruit applesauce, FK Values={}
+[2024-12-11T10:59:26.295+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=100, Name=missing, FK Values={}
+[2024-12-11T10:59:26.297+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=101, Name=air fresheners candles, FK Values={}
+[2024-12-11T10:59:26.299+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=102, Name=baby bath body care, FK Values={}
+[2024-12-11T10:59:26.301+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=103, Name=ice cream toppings, FK Values={}
+[2024-12-11T10:59:26.302+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=104, Name=spices seasonings, FK Values={}
+[2024-12-11T10:59:26.305+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=105, Name=doughs gelatins bake mixes, FK Values={}
+[2024-12-11T10:59:26.307+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=106, Name=hot dogs bacon sausage, FK Values={}
+[2024-12-11T10:59:26.309+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=107, Name=chips pretzels, FK Values={}
+[2024-12-11T10:59:26.310+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=108, Name=other creams cheeses, FK Values={}
+[2024-12-11T10:59:26.312+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=109, Name=skin care, FK Values={}
+[2024-12-11T10:59:26.313+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=110, Name=pickled goods olives, FK Values={}
+[2024-12-11T10:59:26.314+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=111, Name=plates bowls cups flatware, FK Values={}
+[2024-12-11T10:59:26.316+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=112, Name=bread, FK Values={}
+[2024-12-11T10:59:26.318+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=113, Name=frozen juice, FK Values={}
+[2024-12-11T10:59:26.321+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=114, Name=cleaning products, FK Values={}
+[2024-12-11T10:59:26.323+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=115, Name=water seltzer sparkling water, FK Values={}
+[2024-12-11T10:59:26.325+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=116, Name=frozen produce, FK Values={}
+[2024-12-11T10:59:26.327+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=117, Name=nuts seeds dried fruit, FK Values={}
+[2024-12-11T10:59:26.328+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=118, Name=first aid, FK Values={}
+[2024-12-11T10:59:26.330+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=119, Name=frozen dessert, FK Values={}
+[2024-12-11T10:59:26.331+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=120, Name=yogurt, FK Values={}
+[2024-12-11T10:59:26.333+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=121, Name=cereal, FK Values={}
+[2024-12-11T10:59:26.334+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=122, Name=meat counter, FK Values={}
+[2024-12-11T10:59:26.337+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=123, Name=packaged vegetables fruits, FK Values={}
+[2024-12-11T10:59:26.340+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=124, Name=spirits, FK Values={}
+[2024-12-11T10:59:26.342+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=125, Name=trail mix snack mix, FK Values={}
+[2024-12-11T10:59:26.345+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=126, Name=feminine care, FK Values={}
+[2024-12-11T10:59:26.347+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=127, Name=body lotions soap, FK Values={}
+[2024-12-11T10:59:26.349+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=128, Name=tortillas flat bread, FK Values={}
+[2024-12-11T10:59:26.351+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=129, Name=frozen appetizers sides, FK Values={}
+[2024-12-11T10:59:26.355+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=130, Name=hot cereal pancake mixes, FK Values={}
+[2024-12-11T10:59:26.357+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=131, Name=dry pasta, FK Values={}
+[2024-12-11T10:59:26.358+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=132, Name=beauty, FK Values={}
+[2024-12-11T10:59:26.360+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=133, Name=muscles joints pain relief, FK Values={}
+[2024-12-11T10:59:26.361+0000] {logging_mixin.py:190} INFO - Preparing to handle row: ID=134, Name=specialty wines champagnes, FK Values={}
+[2024-12-11T10:59:26.364+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-11T10:59:26.374+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-11T10:59:26.375+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instacart_pl, task_id=etl_dim_aisle, run_id=manual__2024-12-11T10:59:22.292652+00:00, execution_date=20241211T105922, start_date=20241211T105925, end_date=20241211T105926
+[2024-12-11T10:59:26.438+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-11T10:59:26.473+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-11T10:59:26.479+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

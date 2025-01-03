@@ -1,0 +1,3 @@
+[2024-12-17T22:13:15.307+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-17T22:13:15.349+0000] {taskinstance.py:2603} INFO - Dependencies not met for <TaskInstance: instacart_etl.etl_dim_orders manual__2024-12-17T22:04:31.678728+00:00 [failed]>, dependency 'Task Instance State' FAILED: Task is in the 'failed' state.
+[2024-12-17T22:13:15.353+0000] {local_task_job_runner.py:166} INFO - Task is not able to be run

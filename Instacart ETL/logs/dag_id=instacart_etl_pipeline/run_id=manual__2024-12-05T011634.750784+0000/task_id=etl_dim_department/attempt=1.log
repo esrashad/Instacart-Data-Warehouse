@@ -1,0 +1,26 @@
+[2024-12-05T01:16:42.456+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-05T01:16:42.479+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instacart_etl_pipeline.etl_dim_department manual__2024-12-05T01:16:34.750784+00:00 [queued]>
+[2024-12-05T01:16:42.490+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instacart_etl_pipeline.etl_dim_department manual__2024-12-05T01:16:34.750784+00:00 [queued]>
+[2024-12-05T01:16:42.491+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-05T01:16:42.510+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): etl_dim_department> on 2024-12-05 01:16:34.750784+00:00
+[2024-12-05T01:16:42.528+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'instacart_etl_pipeline', 'etl_dim_department', 'manual__2024-12-05T01:16:34.750784+00:00', '--job-id', '340', '--raw', '--subdir', 'DAGS_FOLDER/instacart_etl_dag.py', '--cfg-path', '/tmp/tmp5fax45l8']
+[2024-12-05T01:16:42.534+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=2515) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-12-05T01:16:42.536+0000] {standard_task_runner.py:105} INFO - Job 340: Subtask etl_dim_department
+[2024-12-05T01:16:42.537+0000] {standard_task_runner.py:72} INFO - Started process 2525 to run task
+[2024-12-05T01:16:42.684+0000] {task_command.py:467} INFO - Running <TaskInstance: instacart_etl_pipeline.etl_dim_department manual__2024-12-05T01:16:34.750784+00:00 [running]> on host f9e7195a95b4
+[2024-12-05T01:16:42.849+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='instacart_etl_pipeline' AIRFLOW_CTX_TASK_ID='etl_dim_department' AIRFLOW_CTX_EXECUTION_DATE='2024-12-05T01:16:34.750784+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-05T01:16:34.750784+00:00'
+[2024-12-05T01:16:42.854+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-05T01:16:42.905+0000] {base.py:84} INFO - Retrieving connection 'mssql_default'
+[2024-12-05T01:16:43.080+0000] {logging_mixin.py:190} INFO - Initial DataFrame from /opt/***/data/departments.csv/departments.csv:
+   department_id department
+0              1     frozen
+1              2      other
+2              3     bakery
+3              4    produce
+4              5    alcohol
+[2024-12-05T01:16:43.202+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-05T01:16:43.218+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-05T01:16:43.219+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instacart_etl_pipeline, task_id=etl_dim_department, run_id=manual__2024-12-05T01:16:34.750784+00:00, execution_date=20241205T011634, start_date=20241205T011642, end_date=20241205T011643
+[2024-12-05T01:16:43.277+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-05T01:16:43.299+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-05T01:16:43.304+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

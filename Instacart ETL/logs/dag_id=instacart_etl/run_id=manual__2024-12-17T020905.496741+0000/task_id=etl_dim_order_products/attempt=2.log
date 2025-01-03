@@ -1,0 +1,16 @@
+[2024-12-17T02:23:27.769+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-17T02:23:27.791+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instacart_etl.etl_dim_order_products manual__2024-12-17T02:09:05.496741+00:00 [queued]>
+[2024-12-17T02:23:27.806+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instacart_etl.etl_dim_order_products manual__2024-12-17T02:09:05.496741+00:00 [queued]>
+[2024-12-17T02:23:27.807+0000] {taskinstance.py:2866} INFO - Starting attempt 2 of 2
+[2024-12-17T02:23:27.824+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): etl_dim_order_products> on 2024-12-17 02:09:05.496741+00:00
+[2024-12-17T02:23:27.847+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=1377) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-12-17T02:23:27.849+0000] {standard_task_runner.py:72} INFO - Started process 1390 to run task
+[2024-12-17T02:23:27.847+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'instacart_etl', 'etl_dim_order_products', 'manual__2024-12-17T02:09:05.496741+00:00', '--job-id', '134', '--raw', '--subdir', 'DAGS_FOLDER/instacart_etl_dag.py', '--cfg-path', '/tmp/tmpxq1cb99g']
+[2024-12-17T02:23:27.851+0000] {standard_task_runner.py:105} INFO - Job 134: Subtask etl_dim_order_products
+[2024-12-17T02:23:27.909+0000] {task_command.py:467} INFO - Running <TaskInstance: instacart_etl.etl_dim_order_products manual__2024-12-17T02:09:05.496741+00:00 [running]> on host 0e09f46eec36
+[2024-12-17T02:23:28.029+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='instacart_etl' AIRFLOW_CTX_TASK_ID='etl_dim_order_products' AIRFLOW_CTX_EXECUTION_DATE='2024-12-17T02:09:05.496741+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-17T02:09:05.496741+00:00'
+[2024-12-17T02:23:28.031+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-17T02:23:53.581+0000] {job.py:229} INFO - Heartbeat recovered after 15.50 seconds
+[2024-12-17T02:23:53.622+0000] {local_task_job_runner.py:266} INFO - Task exited with return code -9. For more information, see https://***.apache.org/docs/apache-***/stable/troubleshooting.html#LocalTaskJob-killed
+[2024-12-17T02:23:53.667+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-17T02:23:53.675+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

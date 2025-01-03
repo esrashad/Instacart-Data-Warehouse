@@ -1,0 +1,18 @@
+[2024-12-23T20:49:07.580+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-23T20:49:07.600+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instacart_etl.etl_dim_product manual__2024-12-23T20:48:56.168183+00:00 [queued]>
+[2024-12-23T20:49:07.611+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instacart_etl.etl_dim_product manual__2024-12-23T20:48:56.168183+00:00 [queued]>
+[2024-12-23T20:49:07.612+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-23T20:49:07.648+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): etl_dim_product> on 2024-12-23 20:48:56.168183+00:00
+[2024-12-23T20:49:07.672+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'instacart_etl', 'etl_dim_product', 'manual__2024-12-23T20:48:56.168183+00:00', '--job-id', '185', '--raw', '--subdir', 'DAGS_FOLDER/instacart_etl_dag.py', '--cfg-path', '/tmp/tmpilavn74s']
+[2024-12-23T20:49:07.678+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=4295) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-12-23T20:49:07.680+0000] {standard_task_runner.py:72} INFO - Started process 4297 to run task
+[2024-12-23T20:49:07.679+0000] {standard_task_runner.py:105} INFO - Job 185: Subtask etl_dim_product
+[2024-12-23T20:49:07.751+0000] {task_command.py:467} INFO - Running <TaskInstance: instacart_etl.etl_dim_product manual__2024-12-23T20:48:56.168183+00:00 [running]> on host 6b2faa8d630d
+[2024-12-23T20:49:07.871+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='instacart_etl' AIRFLOW_CTX_TASK_ID='etl_dim_product' AIRFLOW_CTX_EXECUTION_DATE='2024-12-23T20:48:56.168183+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-23T20:48:56.168183+00:00'
+[2024-12-23T20:49:07.872+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-23T20:49:49.622+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-23T20:49:49.668+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-23T20:49:49.670+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instacart_etl, task_id=etl_dim_product, run_id=manual__2024-12-23T20:48:56.168183+00:00, execution_date=20241223T204856, start_date=20241223T204907, end_date=20241223T204949
+[2024-12-23T20:49:52.446+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-23T20:49:52.511+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-23T20:49:52.517+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

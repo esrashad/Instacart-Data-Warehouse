@@ -1,0 +1,20 @@
+[2024-11-20T22:32:09.187+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-20T22:32:09.213+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sql_server_connection_test.test_connection manual__2024-11-20T22:32:08.563642+00:00 [queued]>
+[2024-11-20T22:32:09.227+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sql_server_connection_test.test_connection manual__2024-11-20T22:32:08.563642+00:00 [queued]>
+[2024-11-20T22:32:09.228+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-11-20T22:32:09.251+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): test_connection> on 2024-11-20 22:32:08.563642+00:00
+[2024-11-20T22:32:09.261+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=457) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-20T22:32:09.263+0000] {standard_task_runner.py:72} INFO - Started process 458 to run task
+[2024-11-20T22:32:09.261+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'sql_server_connection_test', 'test_connection', 'manual__2024-11-20T22:32:08.563642+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/test_conn.py', '--cfg-path', '/tmp/tmpo2_1hxg7']
+[2024-11-20T22:32:09.265+0000] {standard_task_runner.py:105} INFO - Job 19: Subtask test_connection
+[2024-11-20T22:32:09.336+0000] {task_command.py:467} INFO - Running <TaskInstance: sql_server_connection_test.test_connection manual__2024-11-20T22:32:08.563642+00:00 [running]> on host baec28c4cb21
+[2024-11-20T22:32:09.451+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='sql_server_connection_test' AIRFLOW_CTX_TASK_ID='test_connection' AIRFLOW_CTX_EXECUTION_DATE='2024-11-20T22:32:08.563642+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-20T22:32:08.563642+00:00'
+[2024-11-20T22:32:09.452+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-20T22:32:09.475+0000] {base.py:84} INFO - Retrieving connection 'mssql_default'
+[2024-11-20T22:32:09.558+0000] {test_conn.py:21} INFO - SQL Server Version: ('Microsoft SQL Server 2019 (RTM-CU29-GDR) (KB5046860) - 15.0.4410.1 (X64) \n\tOct 23 2024 15:50:49 \n\tCopyright (C) 2019 Microsoft Corporation\n\tDeveloper Edition (64-bit) on Linux (Ubuntu 20.04.6 LTS) <X64>',)
+[2024-11-20T22:32:09.559+0000] {python.py:240} INFO - Done. Returned value was: ('Microsoft SQL Server 2019 (RTM-CU29-GDR) (KB5046860) - 15.0.4410.1 (X64) \n\tOct 23 2024 15:50:49 \n\tCopyright (C) 2019 Microsoft Corporation\n\tDeveloper Edition (64-bit) on Linux (Ubuntu 20.04.6 LTS) <X64>',)
+[2024-11-20T22:32:09.588+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-20T22:32:09.589+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=sql_server_connection_test, task_id=test_connection, run_id=manual__2024-11-20T22:32:08.563642+00:00, execution_date=20241120T223208, start_date=20241120T223209, end_date=20241120T223209
+[2024-11-20T22:32:09.641+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-20T22:32:09.659+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-20T22:32:09.665+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

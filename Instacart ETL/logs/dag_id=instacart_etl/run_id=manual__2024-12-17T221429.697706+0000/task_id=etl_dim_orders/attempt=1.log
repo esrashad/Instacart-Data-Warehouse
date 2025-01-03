@@ -1,0 +1,187 @@
+[2024-12-17T22:15:29.816+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-17T22:15:29.839+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instacart_etl.etl_dim_orders manual__2024-12-17T22:14:29.697706+00:00 [queued]>
+[2024-12-17T22:15:29.855+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instacart_etl.etl_dim_orders manual__2024-12-17T22:14:29.697706+00:00 [queued]>
+[2024-12-17T22:15:29.855+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-17T22:15:29.875+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): etl_dim_orders> on 2024-12-17 22:14:29.697706+00:00
+[2024-12-17T22:15:29.886+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=925) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-12-17T22:15:29.888+0000] {standard_task_runner.py:72} INFO - Started process 933 to run task
+[2024-12-17T22:15:29.887+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'instacart_etl', 'etl_dim_orders', 'manual__2024-12-17T22:14:29.697706+00:00', '--job-id', '103', '--raw', '--subdir', 'DAGS_FOLDER/instacart_etl_dag.py', '--cfg-path', '/tmp/tmphdsmxo7j']
+[2024-12-17T22:15:29.889+0000] {standard_task_runner.py:105} INFO - Job 103: Subtask etl_dim_orders
+[2024-12-17T22:15:29.954+0000] {task_command.py:467} INFO - Running <TaskInstance: instacart_etl.etl_dim_orders manual__2024-12-17T22:14:29.697706+00:00 [running]> on host 0579d4f6350d
+[2024-12-17T22:15:30.113+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='instacart_etl' AIRFLOW_CTX_TASK_ID='etl_dim_orders' AIRFLOW_CTX_EXECUTION_DATE='2024-12-17T22:14:29.697706+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-17T22:14:29.697706+00:00'
+[2024-12-17T22:15:30.115+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-17T22:15:30.380+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 1
+[2024-12-17T22:16:02.657+0000] {logging_mixin.py:190} INFO - Chunk 1: Batch 1 - 10000 rows inserted
+[2024-12-17T22:16:03.549+0000] {logging_mixin.py:190} INFO - Chunk 1: Batch 2 - 10000 rows inserted
+[2024-12-17T22:16:04.363+0000] {logging_mixin.py:190} INFO - Chunk 1: Batch 3 - 10000 rows inserted
+[2024-12-17T22:16:05.415+0000] {logging_mixin.py:190} INFO - Chunk 1: Batch 4 - 10000 rows inserted
+[2024-12-17T22:16:06.592+0000] {logging_mixin.py:190} INFO - Chunk 1: Batch 5 - 10000 rows inserted
+[2024-12-17T22:16:06.742+0000] {logging_mixin.py:190} INFO - Chunk 1 completed. Total rows processed: 50000
+[2024-12-17T22:16:07.075+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 2
+[2024-12-17T22:16:36.674+0000] {logging_mixin.py:190} INFO - Chunk 2: Batch 1 - 10000 rows inserted
+[2024-12-17T22:16:37.082+0000] {logging_mixin.py:190} INFO - Chunk 2: Batch 2 - 10000 rows inserted
+[2024-12-17T22:16:37.645+0000] {logging_mixin.py:190} INFO - Chunk 2: Batch 3 - 10000 rows inserted
+[2024-12-17T22:16:38.247+0000] {logging_mixin.py:190} INFO - Chunk 2: Batch 4 - 10000 rows inserted
+[2024-12-17T22:16:38.832+0000] {logging_mixin.py:190} INFO - Chunk 2: Batch 5 - 10000 rows inserted
+[2024-12-17T22:16:38.889+0000] {logging_mixin.py:190} INFO - Chunk 2 completed. Total rows processed: 50000
+[2024-12-17T22:16:38.944+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 3
+[2024-12-17T22:17:04.940+0000] {logging_mixin.py:190} INFO - Chunk 3: Batch 1 - 10000 rows inserted
+[2024-12-17T22:17:05.343+0000] {logging_mixin.py:190} INFO - Chunk 3: Batch 2 - 10000 rows inserted
+[2024-12-17T22:17:06.358+0000] {logging_mixin.py:190} INFO - Chunk 3: Batch 3 - 10000 rows inserted
+[2024-12-17T22:17:07.081+0000] {logging_mixin.py:190} INFO - Chunk 3: Batch 4 - 10000 rows inserted
+[2024-12-17T22:17:07.521+0000] {logging_mixin.py:190} INFO - Chunk 3: Batch 5 - 10000 rows inserted
+[2024-12-17T22:17:07.569+0000] {logging_mixin.py:190} INFO - Chunk 3 completed. Total rows processed: 50000
+[2024-12-17T22:17:07.600+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 4
+[2024-12-17T22:17:38.077+0000] {logging_mixin.py:190} INFO - Chunk 4: Batch 1 - 10000 rows inserted
+[2024-12-17T22:17:38.718+0000] {logging_mixin.py:190} INFO - Chunk 4: Batch 2 - 10000 rows inserted
+[2024-12-17T22:17:39.291+0000] {logging_mixin.py:190} INFO - Chunk 4: Batch 3 - 10000 rows inserted
+[2024-12-17T22:17:39.851+0000] {logging_mixin.py:190} INFO - Chunk 4: Batch 4 - 10000 rows inserted
+[2024-12-17T22:17:40.303+0000] {logging_mixin.py:190} INFO - Chunk 4: Batch 5 - 10000 rows inserted
+[2024-12-17T22:17:40.351+0000] {logging_mixin.py:190} INFO - Chunk 4 completed. Total rows processed: 50000
+[2024-12-17T22:17:40.408+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 5
+[2024-12-17T22:18:10.798+0000] {logging_mixin.py:190} INFO - Chunk 5: Batch 1 - 10000 rows inserted
+[2024-12-17T22:18:11.382+0000] {logging_mixin.py:190} INFO - Chunk 5: Batch 2 - 10000 rows inserted
+[2024-12-17T22:18:11.896+0000] {logging_mixin.py:190} INFO - Chunk 5: Batch 3 - 10000 rows inserted
+[2024-12-17T22:18:12.623+0000] {logging_mixin.py:190} INFO - Chunk 5: Batch 4 - 10000 rows inserted
+[2024-12-17T22:18:13.317+0000] {logging_mixin.py:190} INFO - Chunk 5: Batch 5 - 10000 rows inserted
+[2024-12-17T22:18:13.366+0000] {logging_mixin.py:190} INFO - Chunk 5 completed. Total rows processed: 50000
+[2024-12-17T22:18:13.435+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 6
+[2024-12-17T22:18:41.764+0000] {logging_mixin.py:190} INFO - Chunk 6: Batch 1 - 10000 rows inserted
+[2024-12-17T22:18:42.909+0000] {logging_mixin.py:190} INFO - Chunk 6: Batch 2 - 10000 rows inserted
+[2024-12-17T22:18:43.948+0000] {logging_mixin.py:190} INFO - Chunk 6: Batch 3 - 10000 rows inserted
+[2024-12-17T22:18:44.667+0000] {logging_mixin.py:190} INFO - Chunk 6: Batch 4 - 10000 rows inserted
+[2024-12-17T22:18:45.359+0000] {logging_mixin.py:190} INFO - Chunk 6: Batch 5 - 10000 rows inserted
+[2024-12-17T22:18:45.433+0000] {logging_mixin.py:190} INFO - Chunk 6 completed. Total rows processed: 50000
+[2024-12-17T22:18:45.504+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 7
+[2024-12-17T22:19:18.607+0000] {logging_mixin.py:190} INFO - Chunk 7: Batch 1 - 10000 rows inserted
+[2024-12-17T22:19:19.658+0000] {logging_mixin.py:190} INFO - Chunk 7: Batch 2 - 10000 rows inserted
+[2024-12-17T22:19:20.583+0000] {logging_mixin.py:190} INFO - Chunk 7: Batch 3 - 10000 rows inserted
+[2024-12-17T22:19:21.202+0000] {logging_mixin.py:190} INFO - Chunk 7: Batch 4 - 10000 rows inserted
+[2024-12-17T22:19:21.831+0000] {logging_mixin.py:190} INFO - Chunk 7: Batch 5 - 10000 rows inserted
+[2024-12-17T22:19:21.889+0000] {logging_mixin.py:190} INFO - Chunk 7 completed. Total rows processed: 50000
+[2024-12-17T22:19:21.984+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 8
+[2024-12-17T22:19:52.289+0000] {logging_mixin.py:190} INFO - Chunk 8: Batch 1 - 10000 rows inserted
+[2024-12-17T22:19:53.082+0000] {logging_mixin.py:190} INFO - Chunk 8: Batch 2 - 10000 rows inserted
+[2024-12-17T22:19:53.804+0000] {logging_mixin.py:190} INFO - Chunk 8: Batch 3 - 10000 rows inserted
+[2024-12-17T22:19:54.450+0000] {logging_mixin.py:190} INFO - Chunk 8: Batch 4 - 10000 rows inserted
+[2024-12-17T22:19:55.098+0000] {logging_mixin.py:190} INFO - Chunk 8: Batch 5 - 10000 rows inserted
+[2024-12-17T22:19:55.163+0000] {logging_mixin.py:190} INFO - Chunk 8 completed. Total rows processed: 50000
+[2024-12-17T22:19:55.390+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 9
+[2024-12-17T22:20:25.870+0000] {logging_mixin.py:190} INFO - Chunk 9: Batch 1 - 10000 rows inserted
+[2024-12-17T22:20:26.531+0000] {logging_mixin.py:190} INFO - Chunk 9: Batch 2 - 10000 rows inserted
+[2024-12-17T22:20:27.233+0000] {logging_mixin.py:190} INFO - Chunk 9: Batch 3 - 10000 rows inserted
+[2024-12-17T22:20:28.898+0000] {logging_mixin.py:190} INFO - Chunk 9: Batch 4 - 10000 rows inserted
+[2024-12-17T22:20:31.383+0000] {logging_mixin.py:190} INFO - Chunk 9: Batch 5 - 10000 rows inserted
+[2024-12-17T22:20:31.493+0000] {logging_mixin.py:190} INFO - Chunk 9 completed. Total rows processed: 50000
+[2024-12-17T22:20:31.626+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 10
+[2024-12-17T22:21:06.902+0000] {logging_mixin.py:190} INFO - Chunk 10: Batch 1 - 10000 rows inserted
+[2024-12-17T22:21:07.460+0000] {logging_mixin.py:190} INFO - Chunk 10: Batch 2 - 10000 rows inserted
+[2024-12-17T22:21:08.357+0000] {logging_mixin.py:190} INFO - Chunk 10: Batch 3 - 10000 rows inserted
+[2024-12-17T22:21:09.300+0000] {logging_mixin.py:190} INFO - Chunk 10: Batch 4 - 10000 rows inserted
+[2024-12-17T22:21:10.303+0000] {logging_mixin.py:190} INFO - Chunk 10: Batch 5 - 10000 rows inserted
+[2024-12-17T22:21:10.376+0000] {logging_mixin.py:190} INFO - Chunk 10 completed. Total rows processed: 50000
+[2024-12-17T22:21:10.465+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 11
+[2024-12-17T22:21:46.196+0000] {logging_mixin.py:190} INFO - Chunk 11: Batch 1 - 10000 rows inserted
+[2024-12-17T22:21:46.731+0000] {logging_mixin.py:190} INFO - Chunk 11: Batch 2 - 10000 rows inserted
+[2024-12-17T22:21:47.400+0000] {logging_mixin.py:190} INFO - Chunk 11: Batch 3 - 10000 rows inserted
+[2024-12-17T22:21:48.207+0000] {logging_mixin.py:190} INFO - Chunk 11: Batch 4 - 10000 rows inserted
+[2024-12-17T22:21:48.874+0000] {logging_mixin.py:190} INFO - Chunk 11: Batch 5 - 10000 rows inserted
+[2024-12-17T22:21:48.936+0000] {logging_mixin.py:190} INFO - Chunk 11 completed. Total rows processed: 50000
+[2024-12-17T22:21:49.006+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 12
+[2024-12-17T22:22:18.770+0000] {logging_mixin.py:190} INFO - Chunk 12: Batch 1 - 10000 rows inserted
+[2024-12-17T22:22:19.557+0000] {logging_mixin.py:190} INFO - Chunk 12: Batch 2 - 10000 rows inserted
+[2024-12-17T22:22:20.170+0000] {logging_mixin.py:190} INFO - Chunk 12: Batch 3 - 10000 rows inserted
+[2024-12-17T22:22:20.799+0000] {logging_mixin.py:190} INFO - Chunk 12: Batch 4 - 10000 rows inserted
+[2024-12-17T22:22:21.331+0000] {logging_mixin.py:190} INFO - Chunk 12: Batch 5 - 10000 rows inserted
+[2024-12-17T22:22:21.378+0000] {logging_mixin.py:190} INFO - Chunk 12 completed. Total rows processed: 50000
+[2024-12-17T22:22:21.418+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 13
+[2024-12-17T22:22:52.411+0000] {logging_mixin.py:190} INFO - Chunk 13: Batch 1 - 10000 rows inserted
+[2024-12-17T22:22:52.904+0000] {logging_mixin.py:190} INFO - Chunk 13: Batch 2 - 10000 rows inserted
+[2024-12-17T22:22:53.513+0000] {logging_mixin.py:190} INFO - Chunk 13: Batch 3 - 10000 rows inserted
+[2024-12-17T22:22:54.072+0000] {logging_mixin.py:190} INFO - Chunk 13: Batch 4 - 10000 rows inserted
+[2024-12-17T22:22:54.650+0000] {logging_mixin.py:190} INFO - Chunk 13: Batch 5 - 10000 rows inserted
+[2024-12-17T22:22:54.704+0000] {logging_mixin.py:190} INFO - Chunk 13 completed. Total rows processed: 50000
+[2024-12-17T22:22:54.741+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 14
+[2024-12-17T22:23:24.875+0000] {logging_mixin.py:190} INFO - Chunk 14: Batch 1 - 10000 rows inserted
+[2024-12-17T22:23:25.697+0000] {logging_mixin.py:190} INFO - Chunk 14: Batch 2 - 10000 rows inserted
+[2024-12-17T22:23:26.479+0000] {logging_mixin.py:190} INFO - Chunk 14: Batch 3 - 10000 rows inserted
+[2024-12-17T22:23:27.118+0000] {logging_mixin.py:190} INFO - Chunk 14: Batch 4 - 10000 rows inserted
+[2024-12-17T22:23:27.662+0000] {logging_mixin.py:190} INFO - Chunk 14: Batch 5 - 10000 rows inserted
+[2024-12-17T22:23:27.726+0000] {logging_mixin.py:190} INFO - Chunk 14 completed. Total rows processed: 50000
+[2024-12-17T22:23:27.782+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 15
+[2024-12-17T22:24:02.713+0000] {logging_mixin.py:190} INFO - Chunk 15: Batch 1 - 10000 rows inserted
+[2024-12-17T22:24:03.673+0000] {logging_mixin.py:190} INFO - Chunk 15: Batch 2 - 10000 rows inserted
+[2024-12-17T22:24:04.553+0000] {logging_mixin.py:190} INFO - Chunk 15: Batch 3 - 10000 rows inserted
+[2024-12-17T22:24:05.437+0000] {logging_mixin.py:190} INFO - Chunk 15: Batch 4 - 10000 rows inserted
+[2024-12-17T22:24:06.308+0000] {logging_mixin.py:190} INFO - Chunk 15: Batch 5 - 10000 rows inserted
+[2024-12-17T22:24:06.411+0000] {logging_mixin.py:190} INFO - Chunk 15 completed. Total rows processed: 50000
+[2024-12-17T22:24:06.583+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 16
+[2024-12-17T22:24:39.080+0000] {logging_mixin.py:190} INFO - Chunk 16: Batch 1 - 10000 rows inserted
+[2024-12-17T22:24:39.621+0000] {logging_mixin.py:190} INFO - Chunk 16: Batch 2 - 10000 rows inserted
+[2024-12-17T22:24:40.169+0000] {logging_mixin.py:190} INFO - Chunk 16: Batch 3 - 10000 rows inserted
+[2024-12-17T22:24:40.629+0000] {logging_mixin.py:190} INFO - Chunk 16: Batch 4 - 10000 rows inserted
+[2024-12-17T22:24:41.157+0000] {logging_mixin.py:190} INFO - Chunk 16: Batch 5 - 10000 rows inserted
+[2024-12-17T22:24:41.221+0000] {logging_mixin.py:190} INFO - Chunk 16 completed. Total rows processed: 50000
+[2024-12-17T22:24:41.270+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 17
+[2024-12-17T22:25:14.874+0000] {logging_mixin.py:190} INFO - Chunk 17: Batch 1 - 10000 rows inserted
+[2024-12-17T22:25:15.382+0000] {logging_mixin.py:190} INFO - Chunk 17: Batch 2 - 10000 rows inserted
+[2024-12-17T22:25:15.895+0000] {logging_mixin.py:190} INFO - Chunk 17: Batch 3 - 10000 rows inserted
+[2024-12-17T22:25:16.422+0000] {logging_mixin.py:190} INFO - Chunk 17: Batch 4 - 10000 rows inserted
+[2024-12-17T22:25:16.990+0000] {logging_mixin.py:190} INFO - Chunk 17: Batch 5 - 10000 rows inserted
+[2024-12-17T22:25:17.055+0000] {logging_mixin.py:190} INFO - Chunk 17 completed. Total rows processed: 50000
+[2024-12-17T22:25:17.113+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 18
+[2024-12-17T22:25:50.875+0000] {logging_mixin.py:190} INFO - Chunk 18: Batch 1 - 10000 rows inserted
+[2024-12-17T22:25:52.036+0000] {logging_mixin.py:190} INFO - Chunk 18: Batch 2 - 10000 rows inserted
+[2024-12-17T22:25:52.920+0000] {logging_mixin.py:190} INFO - Chunk 18: Batch 3 - 10000 rows inserted
+[2024-12-17T22:25:53.515+0000] {logging_mixin.py:190} INFO - Chunk 18: Batch 4 - 10000 rows inserted
+[2024-12-17T22:26:02.170+0000] {logging_mixin.py:190} INFO - Chunk 18: Batch 5 - 10000 rows inserted
+[2024-12-17T22:26:02.249+0000] {logging_mixin.py:190} INFO - Chunk 18 completed. Total rows processed: 50000
+[2024-12-17T22:26:02.453+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 19
+[2024-12-17T22:26:33.300+0000] {logging_mixin.py:190} INFO - Chunk 19: Batch 1 - 10000 rows inserted
+[2024-12-17T22:26:34.048+0000] {logging_mixin.py:190} INFO - Chunk 19: Batch 2 - 10000 rows inserted
+[2024-12-17T22:26:35.039+0000] {logging_mixin.py:190} INFO - Chunk 19: Batch 3 - 10000 rows inserted
+[2024-12-17T22:26:35.695+0000] {logging_mixin.py:190} INFO - Chunk 19: Batch 4 - 10000 rows inserted
+[2024-12-17T22:26:36.416+0000] {logging_mixin.py:190} INFO - Chunk 19: Batch 5 - 10000 rows inserted
+[2024-12-17T22:26:36.484+0000] {logging_mixin.py:190} INFO - Chunk 19 completed. Total rows processed: 50000
+[2024-12-17T22:26:36.562+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 20
+[2024-12-17T22:27:13.369+0000] {logging_mixin.py:190} INFO - Chunk 20: Batch 1 - 10000 rows inserted
+[2024-12-17T22:27:14.026+0000] {logging_mixin.py:190} INFO - Chunk 20: Batch 2 - 10000 rows inserted
+[2024-12-17T22:27:14.653+0000] {logging_mixin.py:190} INFO - Chunk 20: Batch 3 - 10000 rows inserted
+[2024-12-17T22:27:15.205+0000] {logging_mixin.py:190} INFO - Chunk 20: Batch 4 - 10000 rows inserted
+[2024-12-17T22:27:15.822+0000] {logging_mixin.py:190} INFO - Chunk 20: Batch 5 - 10000 rows inserted
+[2024-12-17T22:27:15.908+0000] {logging_mixin.py:190} INFO - Chunk 20 completed. Total rows processed: 50000
+[2024-12-17T22:27:15.947+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 21
+[2024-12-17T22:27:53.111+0000] {logging_mixin.py:190} INFO - Chunk 21: Batch 1 - 10000 rows inserted
+[2024-12-17T22:27:53.629+0000] {logging_mixin.py:190} INFO - Chunk 21: Batch 2 - 10000 rows inserted
+[2024-12-17T22:27:54.257+0000] {logging_mixin.py:190} INFO - Chunk 21: Batch 3 - 10000 rows inserted
+[2024-12-17T22:27:55.048+0000] {logging_mixin.py:190} INFO - Chunk 21: Batch 4 - 10000 rows inserted
+[2024-12-17T22:27:55.664+0000] {logging_mixin.py:190} INFO - Chunk 21: Batch 5 - 8575 rows inserted
+[2024-12-17T22:27:55.727+0000] {logging_mixin.py:190} INFO - Chunk 21 completed. Total rows processed: 48575
+[2024-12-17T22:27:55.840+0000] {logging_mixin.py:190} INFO - ETL Process for Orders Completed.
+[2024-12-17T22:27:55.977+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-17T22:27:56.703+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-17T22:27:56.728+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instacart_etl, task_id=etl_dim_orders, run_id=manual__2024-12-17T22:14:29.697706+00:00, execution_date=20241217T221429, start_date=20241217T221529, end_date=20241217T222756
+[2024-12-17T22:27:57.209+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-17T22:27:57.512+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-17T22:27:57.517+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

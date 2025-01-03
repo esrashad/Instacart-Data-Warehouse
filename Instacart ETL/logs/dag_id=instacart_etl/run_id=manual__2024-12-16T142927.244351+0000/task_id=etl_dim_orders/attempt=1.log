@@ -1,0 +1,102 @@
+[2024-12-16T14:30:36.697+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-16T14:30:36.720+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instacart_etl.etl_dim_orders manual__2024-12-16T14:29:27.244351+00:00 [queued]>
+[2024-12-16T14:30:36.730+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instacart_etl.etl_dim_orders manual__2024-12-16T14:29:27.244351+00:00 [queued]>
+[2024-12-16T14:30:36.731+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-16T14:30:36.752+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): etl_dim_orders> on 2024-12-16 14:29:27.244351+00:00
+[2024-12-16T14:30:36.764+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=13362) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-12-16T14:30:36.768+0000] {standard_task_runner.py:72} INFO - Started process 13364 to run task
+[2024-12-16T14:30:36.765+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'instacart_etl', 'etl_dim_orders', 'manual__2024-12-16T14:29:27.244351+00:00', '--job-id', '81', '--raw', '--subdir', 'DAGS_FOLDER/instacart_etl_dag.py', '--cfg-path', '/tmp/tmpaojwl2xt']
+[2024-12-16T14:30:36.770+0000] {standard_task_runner.py:105} INFO - Job 81: Subtask etl_dim_orders
+[2024-12-16T14:30:36.835+0000] {task_command.py:467} INFO - Running <TaskInstance: instacart_etl.etl_dim_orders manual__2024-12-16T14:29:27.244351+00:00 [running]> on host 2aa9588baaec
+[2024-12-16T14:30:36.955+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='instacart_etl' AIRFLOW_CTX_TASK_ID='etl_dim_orders' AIRFLOW_CTX_EXECUTION_DATE='2024-12-16T14:29:27.244351+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-16T14:29:27.244351+00:00'
+[2024-12-16T14:30:36.956+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-16T14:43:24.413+0000] {job.py:229} INFO - Heartbeat recovered after 25.21 seconds
+[2024-12-16T14:43:32.438+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/instacart_etl_dag.py", line 171, in etl_dim_orders
+    cursor.executemany(f""" INSERT INTO {table_name}
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]There is insufficient system memory in resource pool 'default' to run this query. (701) (SQLExecute)")
+[2024-12-16T14:43:33.176+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=instacart_etl, task_id=etl_dim_orders, run_id=manual__2024-12-16T14:29:27.244351+00:00, execution_date=20241216T142927, start_date=20241216T143036, end_date=20241216T144333
+[2024-12-16T14:43:33.598+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-16T14:43:33.624+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 81 for task etl_dim_orders (('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]There is insufficient system memory in resource pool 'default' to run this query. (701) (SQLExecute)"); 13364)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/instacart_etl_dag.py", line 171, in etl_dim_orders
+    cursor.executemany(f""" INSERT INTO {table_name}
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]There is insufficient system memory in resource pool 'default' to run this query. (701) (SQLExecute)")
+[2024-12-16T14:43:33.849+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-12-16T14:43:34.459+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-16T14:43:34.467+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

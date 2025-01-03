@@ -1,0 +1,284 @@
+[2024-12-12T18:46:16.266+0000] {processor.py:186} INFO - Started process (PID=582) to work on /opt/airflow/dags/test.py
+[2024-12-12T18:46:16.268+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T18:46:16.273+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:46:16.273+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T18:46:16.317+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:46:16.305+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 30, in <module>
+    'retry_delay': timedelta(minutes=5),
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-12-12T18:46:16.324+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-12-12T18:46:16.360+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.102 seconds
+[2024-12-12T18:47:09.068+0000] {processor.py:186} INFO - Started process (PID=203) to work on /opt/airflow/dags/test.py
+[2024-12-12T18:47:09.083+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T18:47:09.112+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:47:09.108+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T18:47:09.187+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:47:09.159+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 30, in <module>
+    'retry_delay': timedelta(minutes=5),
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-12-12T18:47:09.194+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-12-12T18:47:09.348+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.372 seconds
+[2024-12-12T18:47:40.130+0000] {processor.py:186} INFO - Started process (PID=226) to work on /opt/airflow/dags/test.py
+[2024-12-12T18:47:40.131+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T18:47:40.134+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:47:40.133+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T18:47:40.157+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:47:40.146+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 30, in <module>
+    'retry_delay': timedelta(minutes=5),
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-12-12T18:47:40.161+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-12-12T18:47:40.191+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.069 seconds
+[2024-12-12T18:48:10.273+0000] {processor.py:186} INFO - Started process (PID=250) to work on /opt/airflow/dags/test.py
+[2024-12-12T18:48:10.274+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T18:48:10.277+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:48:10.277+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T18:48:10.303+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:48:10.295+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 30, in <module>
+    'retry_delay': timedelta(minutes=5),
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-12-12T18:48:10.308+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-12-12T18:48:10.333+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.067 seconds
+[2024-12-12T18:48:36.270+0000] {processor.py:186} INFO - Started process (PID=267) to work on /opt/airflow/dags/test.py
+[2024-12-12T18:48:36.272+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T18:48:36.277+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:48:36.276+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T18:48:36.326+0000] {processor.py:925} INFO - DAG(s) 'test_sql_server_connection' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T18:48:36.632+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:48:36.631+0000] {override.py:1911} INFO - Created Permission View: can edit on DAG:test_sql_server_connection
+[2024-12-12T18:48:36.654+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:48:36.654+0000] {override.py:1911} INFO - Created Permission View: can read on DAG:test_sql_server_connection
+[2024-12-12T18:48:36.669+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:48:36.669+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG:test_sql_server_connection
+[2024-12-12T18:48:36.690+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:48:36.690+0000] {override.py:1911} INFO - Created Permission View: can create on DAG Run:test_sql_server_connection
+[2024-12-12T18:48:36.704+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:48:36.704+0000] {override.py:1911} INFO - Created Permission View: can read on DAG Run:test_sql_server_connection
+[2024-12-12T18:48:36.720+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:48:36.720+0000] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:test_sql_server_connection
+[2024-12-12T18:48:36.735+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:48:36.734+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:test_sql_server_connection
+[2024-12-12T18:48:36.736+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:48:36.736+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T18:48:36.758+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:48:36.758+0000] {dag.py:3262} INFO - Creating ORM DAG for test_sql_server_connection
+[2024-12-12T18:48:36.760+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:48:36.760+0000] {dag.py:4180} INFO - Setting next_dagrun for test_sql_server_connection to None, run_after=None
+[2024-12-12T18:48:36.794+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.538 seconds
+[2024-12-12T18:49:07.382+0000] {processor.py:186} INFO - Started process (PID=293) to work on /opt/airflow/dags/test.py
+[2024-12-12T18:49:07.384+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T18:49:07.393+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:49:07.393+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T18:49:07.440+0000] {processor.py:925} INFO - DAG(s) 'test_sql_server_connection' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T18:49:07.493+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:49:07.493+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T18:49:07.525+0000] {logging_mixin.py:190} INFO - [2024-12-12T18:49:07.525+0000] {dag.py:4180} INFO - Setting next_dagrun for test_sql_server_connection to None, run_after=None
+[2024-12-12T18:49:07.566+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.192 seconds
+[2024-12-12T23:20:13.680+0000] {processor.py:186} INFO - Started process (PID=191) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:20:13.685+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:20:13.700+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:20:13.699+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:20:13.760+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:20:14.326+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:20:14.322+0000] {override.py:1911} INFO - Created Permission View: can read on DAG:sql_bulk_insert_test
+[2024-12-12T23:20:14.344+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:20:14.344+0000] {override.py:1911} INFO - Created Permission View: can edit on DAG:sql_bulk_insert_test
+[2024-12-12T23:20:14.358+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:20:14.358+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG:sql_bulk_insert_test
+[2024-12-12T23:20:14.374+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:20:14.373+0000] {override.py:1911} INFO - Created Permission View: can read on DAG Run:sql_bulk_insert_test
+[2024-12-12T23:20:14.386+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:20:14.385+0000] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:sql_bulk_insert_test
+[2024-12-12T23:20:14.397+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:20:14.396+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:sql_bulk_insert_test
+[2024-12-12T23:20:14.408+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:20:14.408+0000] {override.py:1911} INFO - Created Permission View: can create on DAG Run:sql_bulk_insert_test
+[2024-12-12T23:20:14.409+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:20:14.409+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:20:14.428+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:20:14.427+0000] {dag.py:3262} INFO - Creating ORM DAG for sql_bulk_insert_test
+[2024-12-12T23:20:14.429+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:20:14.429+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:20:14.458+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.803 seconds
+[2024-12-12T23:20:45.039+0000] {processor.py:186} INFO - Started process (PID=214) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:20:45.040+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:20:45.043+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:20:45.042+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:20:45.073+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:20:45.099+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:20:45.099+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:20:45.115+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:20:45.115+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:20:45.140+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.107 seconds
+[2024-12-12T23:21:15.369+0000] {processor.py:186} INFO - Started process (PID=237) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:21:15.371+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:21:15.373+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:21:15.373+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:21:15.403+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:21:15.429+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:21:15.429+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:21:15.448+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:21:15.447+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:21:15.475+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.114 seconds
+[2024-12-12T23:21:46.190+0000] {processor.py:186} INFO - Started process (PID=266) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:21:46.191+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:21:46.193+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:21:46.193+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:21:46.216+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:21:46.240+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:21:46.239+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:21:46.254+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:21:46.254+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:21:46.277+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.092 seconds
+[2024-12-12T23:22:17.092+0000] {processor.py:186} INFO - Started process (PID=289) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:22:17.093+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:22:17.096+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:22:17.096+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:22:17.121+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:22:17.149+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:22:17.149+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:22:17.166+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:22:17.166+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:22:17.187+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.102 seconds
+[2024-12-12T23:22:47.705+0000] {processor.py:186} INFO - Started process (PID=312) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:22:47.706+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:22:47.708+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:22:47.707+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:22:47.727+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:22:47.752+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:22:47.752+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:22:47.768+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:22:47.768+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:22:47.790+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.091 seconds
+[2024-12-12T23:23:18.633+0000] {processor.py:186} INFO - Started process (PID=335) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:23:18.636+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:23:18.640+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:23:18.639+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:23:18.668+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:23:18.701+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:23:18.701+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:23:18.724+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:23:18.724+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:23:18.747+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.122 seconds
+[2024-12-12T23:23:49.613+0000] {processor.py:186} INFO - Started process (PID=358) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:23:49.614+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:23:49.616+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:23:49.616+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:23:49.633+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:23:49.654+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:23:49.654+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:23:49.668+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:23:49.668+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:23:49.690+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.082 seconds
+[2024-12-12T23:24:19.932+0000] {processor.py:186} INFO - Started process (PID=381) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:24:19.933+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:24:19.935+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:24:19.935+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:24:19.951+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:24:19.974+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:24:19.974+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:24:19.989+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:24:19.989+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:24:20.013+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.086 seconds
+[2024-12-12T23:24:50.740+0000] {processor.py:186} INFO - Started process (PID=404) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:24:50.741+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:24:50.744+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:24:50.744+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:24:50.764+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:24:50.790+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:24:50.789+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:24:50.806+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:24:50.806+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:24:50.830+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.096 seconds
+[2024-12-12T23:25:21.797+0000] {processor.py:186} INFO - Started process (PID=427) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:25:21.798+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:25:21.801+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:25:21.800+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:25:21.827+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:25:22.030+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:25:22.030+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:25:22.104+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:25:22.104+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:25:22.136+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.345 seconds
+[2024-12-12T23:25:52.266+0000] {processor.py:186} INFO - Started process (PID=450) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:25:52.267+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:25:52.271+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:25:52.271+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:25:52.305+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:25:52.340+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:25:52.340+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:25:52.361+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:25:52.360+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:25:52.392+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.134 seconds
+[2024-12-12T23:26:22.666+0000] {processor.py:186} INFO - Started process (PID=473) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:26:22.667+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:26:22.670+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:26:22.669+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:26:22.689+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:26:22.712+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:26:22.711+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:26:22.726+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:26:22.726+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:26:22.750+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.090 seconds
+[2024-12-12T23:26:53.647+0000] {processor.py:186} INFO - Started process (PID=496) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:26:53.648+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:26:53.651+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:26:53.651+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:26:53.671+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:26:53.705+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:26:53.704+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:26:53.732+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:26:53.732+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:26:53.778+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.136 seconds
+[2024-12-12T23:27:00.729+0000] {processor.py:186} INFO - Started process (PID=501) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:27:00.731+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:27:00.734+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:27:00.734+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:27:00.742+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:27:00.742+0000] {dagbag.py:366} INFO - File /opt/airflow/dags/test.py assumed to contain no DAGs. Skipping.
+[2024-12-12T23:27:00.743+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:27:00.757+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.038 seconds
+[2024-12-12T23:27:31.639+0000] {processor.py:186} INFO - Started process (PID=524) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:27:31.640+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:27:31.643+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:27:31.643+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:27:31.650+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:27:31.649+0000] {dagbag.py:366} INFO - File /opt/airflow/dags/test.py assumed to contain no DAGs. Skipping.
+[2024-12-12T23:27:31.650+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:27:31.662+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.029 seconds
+[2024-12-12T23:27:38.620+0000] {processor.py:186} INFO - Started process (PID=541) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:27:38.621+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:27:38.628+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:27:38.624+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:27:38.728+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:27:38.764+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:27:38.764+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:27:38.789+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:27:38.789+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:27:38.824+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.209 seconds
+[2024-12-12T23:28:09.557+0000] {processor.py:186} INFO - Started process (PID=564) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:28:09.558+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:28:09.561+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:28:09.561+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:28:09.706+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:28:10.005+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:28:10.004+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:28:10.021+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:28:10.021+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:28:10.546+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.997 seconds
+[2024-12-12T23:28:40.982+0000] {processor.py:186} INFO - Started process (PID=587) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:28:40.983+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:28:40.987+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:28:40.987+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:28:41.015+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:28:41.047+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:28:41.047+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:28:41.071+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:28:41.070+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:28:41.097+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.125 seconds
+[2024-12-12T23:29:12.907+0000] {processor.py:186} INFO - Started process (PID=610) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:29:12.910+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:29:12.937+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:29:12.936+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:29:12.996+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:29:13.061+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:29:13.060+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:29:13.096+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:29:13.095+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:29:13.134+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.247 seconds
+[2024-12-12T23:29:44.299+0000] {processor.py:186} INFO - Started process (PID=633) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:29:44.301+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:29:44.305+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:29:44.304+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:29:44.337+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:29:44.371+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:29:44.371+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:29:44.392+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:29:44.392+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:29:44.423+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.134 seconds
+[2024-12-12T23:30:13.608+0000] {processor.py:186} INFO - Started process (PID=644) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:30:13.609+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:30:13.612+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:30:13.612+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:30:13.655+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:30:13.694+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:30:13.694+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:30:13.738+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:30:13.738+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:30:13.782+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.181 seconds
+[2024-12-12T23:30:44.020+0000] {processor.py:186} INFO - Started process (PID=667) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:30:44.022+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:30:44.026+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:30:44.025+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:30:44.063+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:30:44.101+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:30:44.101+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:30:44.128+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:30:44.128+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:30:44.165+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.153 seconds
+[2024-12-12T23:31:14.305+0000] {processor.py:186} INFO - Started process (PID=690) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:31:14.308+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:31:14.315+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:31:14.313+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:31:14.362+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:31:14.406+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:31:14.405+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:31:14.432+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:31:14.431+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:31:14.459+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.173 seconds
+[2024-12-12T23:31:18.541+0000] {processor.py:186} INFO - Started process (PID=713) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:31:18.543+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:31:18.546+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:31:18.546+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:31:18.592+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:31:18.626+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:31:18.626+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:31:18.649+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:31:18.648+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:31:18.693+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.161 seconds
+[2024-12-12T23:31:30.714+0000] {processor.py:186} INFO - Started process (PID=718) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:31:30.716+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:31:30.719+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:31:30.718+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:31:30.772+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:31:30.811+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:31:30.811+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:31:30.835+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:31:30.835+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:31:30.880+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.174 seconds
+[2024-12-12T23:31:55.365+0000] {processor.py:186} INFO - Started process (PID=741) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:31:55.368+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:31:55.382+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:31:55.378+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:31:55.476+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:31:55.555+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:31:55.555+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:31:55.594+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:31:55.593+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:31:55.632+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.308 seconds
+[2024-12-12T23:32:27.912+0000] {processor.py:186} INFO - Started process (PID=762) to work on /opt/airflow/dags/test.py
+[2024-12-12T23:32:27.914+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-12-12T23:32:27.918+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:32:27.917+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-12-12T23:32:27.961+0000] {processor.py:925} INFO - DAG(s) 'sql_bulk_insert_test' retrieved from /opt/airflow/dags/test.py
+[2024-12-12T23:32:28.005+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:32:28.005+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-12T23:32:28.039+0000] {logging_mixin.py:190} INFO - [2024-12-12T23:32:28.038+0000] {dag.py:4180} INFO - Setting next_dagrun for sql_bulk_insert_test to None, run_after=None
+[2024-12-12T23:32:28.101+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.203 seconds

@@ -1,0 +1,185 @@
+[2024-12-17T23:38:49.056+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-17T23:38:49.081+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instacart_etl.etl_dim_order_products manual__2024-12-17T23:21:46.707391+00:00 [queued]>
+[2024-12-17T23:38:49.096+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instacart_etl.etl_dim_order_products manual__2024-12-17T23:21:46.707391+00:00 [queued]>
+[2024-12-17T23:38:49.097+0000] {taskinstance.py:2866} INFO - Starting attempt 2 of 2
+[2024-12-17T23:38:49.120+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): etl_dim_order_products> on 2024-12-17 23:21:46.707391+00:00
+[2024-12-17T23:38:49.137+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=1986) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-12-17T23:38:49.139+0000] {standard_task_runner.py:72} INFO - Started process 1994 to run task
+[2024-12-17T23:38:49.138+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'instacart_etl', 'etl_dim_order_products', 'manual__2024-12-17T23:21:46.707391+00:00', '--job-id', '115', '--raw', '--subdir', 'DAGS_FOLDER/instacart_etl_dag.py', '--cfg-path', '/tmp/tmpvfs548js']
+[2024-12-17T23:38:49.140+0000] {standard_task_runner.py:105} INFO - Job 115: Subtask etl_dim_order_products
+[2024-12-17T23:38:49.207+0000] {task_command.py:467} INFO - Running <TaskInstance: instacart_etl.etl_dim_order_products manual__2024-12-17T23:21:46.707391+00:00 [running]> on host 0040d02929fc
+[2024-12-17T23:38:49.344+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='instacart_etl' AIRFLOW_CTX_TASK_ID='etl_dim_order_products' AIRFLOW_CTX_EXECUTION_DATE='2024-12-17T23:21:46.707391+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-17T23:21:46.707391+00:00'
+[2024-12-17T23:38:49.345+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-17T23:38:49.579+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 1
+[2024-12-17T23:39:26.042+0000] {logging_mixin.py:190} INFO - Chunk 1: Batch 1 - 10000 rows inserted
+[2024-12-17T23:39:26.583+0000] {logging_mixin.py:190} INFO - Chunk 1: Batch 2 - 10000 rows inserted
+[2024-12-17T23:39:27.149+0000] {logging_mixin.py:190} INFO - Chunk 1: Batch 3 - 10000 rows inserted
+[2024-12-17T23:39:28.085+0000] {logging_mixin.py:190} INFO - Chunk 1: Batch 4 - 10000 rows inserted
+[2024-12-17T23:39:28.645+0000] {logging_mixin.py:190} INFO - Chunk 1: Batch 5 - 10000 rows inserted
+[2024-12-17T23:39:28.686+0000] {logging_mixin.py:190} INFO - Chunk 1 completed. Total rows processed: 50000
+[2024-12-17T23:39:28.822+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 2
+[2024-12-17T23:39:55.352+0000] {logging_mixin.py:190} INFO - Chunk 2: Batch 1 - 10000 rows inserted
+[2024-12-17T23:39:55.879+0000] {logging_mixin.py:190} INFO - Chunk 2: Batch 2 - 10000 rows inserted
+[2024-12-17T23:39:56.341+0000] {logging_mixin.py:190} INFO - Chunk 2: Batch 3 - 10000 rows inserted
+[2024-12-17T23:39:56.816+0000] {logging_mixin.py:190} INFO - Chunk 2: Batch 4 - 10000 rows inserted
+[2024-12-17T23:39:57.267+0000] {logging_mixin.py:190} INFO - Chunk 2: Batch 5 - 10000 rows inserted
+[2024-12-17T23:39:57.307+0000] {logging_mixin.py:190} INFO - Chunk 2 completed. Total rows processed: 50000
+[2024-12-17T23:39:57.332+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 3
+[2024-12-17T23:40:25.014+0000] {logging_mixin.py:190} INFO - Chunk 3: Batch 1 - 10000 rows inserted
+[2024-12-17T23:40:25.560+0000] {logging_mixin.py:190} INFO - Chunk 3: Batch 2 - 10000 rows inserted
+[2024-12-17T23:40:26.149+0000] {logging_mixin.py:190} INFO - Chunk 3: Batch 3 - 10000 rows inserted
+[2024-12-17T23:40:26.704+0000] {logging_mixin.py:190} INFO - Chunk 3: Batch 4 - 10000 rows inserted
+[2024-12-17T23:40:27.249+0000] {logging_mixin.py:190} INFO - Chunk 3: Batch 5 - 10000 rows inserted
+[2024-12-17T23:40:27.311+0000] {logging_mixin.py:190} INFO - Chunk 3 completed. Total rows processed: 50000
+[2024-12-17T23:40:27.353+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 4
+[2024-12-17T23:40:55.072+0000] {logging_mixin.py:190} INFO - Chunk 4: Batch 1 - 10000 rows inserted
+[2024-12-17T23:40:55.694+0000] {logging_mixin.py:190} INFO - Chunk 4: Batch 2 - 10000 rows inserted
+[2024-12-17T23:40:56.277+0000] {logging_mixin.py:190} INFO - Chunk 4: Batch 3 - 10000 rows inserted
+[2024-12-17T23:40:56.851+0000] {logging_mixin.py:190} INFO - Chunk 4: Batch 4 - 10000 rows inserted
+[2024-12-17T23:40:57.492+0000] {logging_mixin.py:190} INFO - Chunk 4: Batch 5 - 10000 rows inserted
+[2024-12-17T23:40:57.547+0000] {logging_mixin.py:190} INFO - Chunk 4 completed. Total rows processed: 50000
+[2024-12-17T23:40:57.579+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 5
+[2024-12-17T23:41:25.159+0000] {logging_mixin.py:190} INFO - Chunk 5: Batch 1 - 10000 rows inserted
+[2024-12-17T23:41:25.671+0000] {logging_mixin.py:190} INFO - Chunk 5: Batch 2 - 10000 rows inserted
+[2024-12-17T23:41:26.191+0000] {logging_mixin.py:190} INFO - Chunk 5: Batch 3 - 10000 rows inserted
+[2024-12-17T23:41:26.707+0000] {logging_mixin.py:190} INFO - Chunk 5: Batch 4 - 10000 rows inserted
+[2024-12-17T23:41:27.086+0000] {logging_mixin.py:190} INFO - Chunk 5: Batch 5 - 10000 rows inserted
+[2024-12-17T23:41:27.148+0000] {logging_mixin.py:190} INFO - Chunk 5 completed. Total rows processed: 50000
+[2024-12-17T23:41:27.215+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 6
+[2024-12-17T23:41:53.511+0000] {logging_mixin.py:190} INFO - Chunk 6: Batch 1 - 10000 rows inserted
+[2024-12-17T23:41:53.922+0000] {logging_mixin.py:190} INFO - Chunk 6: Batch 2 - 10000 rows inserted
+[2024-12-17T23:41:54.381+0000] {logging_mixin.py:190} INFO - Chunk 6: Batch 3 - 10000 rows inserted
+[2024-12-17T23:41:54.793+0000] {logging_mixin.py:190} INFO - Chunk 6: Batch 4 - 10000 rows inserted
+[2024-12-17T23:41:55.235+0000] {logging_mixin.py:190} INFO - Chunk 6: Batch 5 - 10000 rows inserted
+[2024-12-17T23:41:55.273+0000] {logging_mixin.py:190} INFO - Chunk 6 completed. Total rows processed: 50000
+[2024-12-17T23:41:55.295+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 7
+[2024-12-17T23:42:26.607+0000] {logging_mixin.py:190} INFO - Chunk 7: Batch 1 - 10000 rows inserted
+[2024-12-17T23:42:27.055+0000] {logging_mixin.py:190} INFO - Chunk 7: Batch 2 - 10000 rows inserted
+[2024-12-17T23:42:27.608+0000] {logging_mixin.py:190} INFO - Chunk 7: Batch 3 - 10000 rows inserted
+[2024-12-17T23:42:28.219+0000] {logging_mixin.py:190} INFO - Chunk 7: Batch 4 - 10000 rows inserted
+[2024-12-17T23:42:28.754+0000] {logging_mixin.py:190} INFO - Chunk 7: Batch 5 - 10000 rows inserted
+[2024-12-17T23:42:28.793+0000] {logging_mixin.py:190} INFO - Chunk 7 completed. Total rows processed: 50000
+[2024-12-17T23:42:28.814+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 8
+[2024-12-17T23:42:55.331+0000] {logging_mixin.py:190} INFO - Chunk 8: Batch 1 - 10000 rows inserted
+[2024-12-17T23:42:55.834+0000] {logging_mixin.py:190} INFO - Chunk 8: Batch 2 - 10000 rows inserted
+[2024-12-17T23:42:56.310+0000] {logging_mixin.py:190} INFO - Chunk 8: Batch 3 - 10000 rows inserted
+[2024-12-17T23:42:56.758+0000] {logging_mixin.py:190} INFO - Chunk 8: Batch 4 - 10000 rows inserted
+[2024-12-17T23:42:57.242+0000] {logging_mixin.py:190} INFO - Chunk 8: Batch 5 - 10000 rows inserted
+[2024-12-17T23:42:57.279+0000] {logging_mixin.py:190} INFO - Chunk 8 completed. Total rows processed: 50000
+[2024-12-17T23:42:57.302+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 9
+[2024-12-17T23:43:22.161+0000] {logging_mixin.py:190} INFO - Chunk 9: Batch 1 - 10000 rows inserted
+[2024-12-17T23:43:22.581+0000] {logging_mixin.py:190} INFO - Chunk 9: Batch 2 - 10000 rows inserted
+[2024-12-17T23:43:23.038+0000] {logging_mixin.py:190} INFO - Chunk 9: Batch 3 - 10000 rows inserted
+[2024-12-17T23:43:23.423+0000] {logging_mixin.py:190} INFO - Chunk 9: Batch 4 - 10000 rows inserted
+[2024-12-17T23:43:23.846+0000] {logging_mixin.py:190} INFO - Chunk 9: Batch 5 - 10000 rows inserted
+[2024-12-17T23:43:23.882+0000] {logging_mixin.py:190} INFO - Chunk 9 completed. Total rows processed: 50000
+[2024-12-17T23:43:23.902+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 10
+[2024-12-17T23:43:49.304+0000] {logging_mixin.py:190} INFO - Chunk 10: Batch 1 - 10000 rows inserted
+[2024-12-17T23:43:49.762+0000] {logging_mixin.py:190} INFO - Chunk 10: Batch 2 - 10000 rows inserted
+[2024-12-17T23:43:50.365+0000] {logging_mixin.py:190} INFO - Chunk 10: Batch 3 - 10000 rows inserted
+[2024-12-17T23:43:51.392+0000] {logging_mixin.py:190} INFO - Chunk 10: Batch 4 - 10000 rows inserted
+[2024-12-17T23:43:52.284+0000] {logging_mixin.py:190} INFO - Chunk 10: Batch 5 - 10000 rows inserted
+[2024-12-17T23:43:52.332+0000] {logging_mixin.py:190} INFO - Chunk 10 completed. Total rows processed: 50000
+[2024-12-17T23:43:52.345+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 11
+[2024-12-17T23:44:06.680+0000] {logging_mixin.py:190} INFO - Chunk 11: Batch 1 - 10000 rows inserted
+[2024-12-17T23:44:07.157+0000] {logging_mixin.py:190} INFO - Chunk 11: Batch 2 - 10000 rows inserted
+[2024-12-17T23:44:07.476+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/instacart_etl_dag.py", line 253, in etl_dim_order_products
+    cursor.executemany(f"""
+pyodbc.IntegrityError: ('23000', '[23000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint "fk_order_products_orders". The conflict occurred in database "InstacartDW", table "dbo.dim_orders", column \'order_key\'. (547) (SQLExecute)')
+[2024-12-17T23:44:07.803+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=instacart_etl, task_id=etl_dim_order_products, run_id=manual__2024-12-17T23:21:46.707391+00:00, execution_date=20241217T232146, start_date=20241217T233849, end_date=20241217T234407
+[2024-12-17T23:44:08.042+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-17T23:44:08.058+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 115 for task etl_dim_order_products (('23000', '[23000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint "fk_order_products_orders". The conflict occurred in database "InstacartDW", table "dbo.dim_orders", column \'order_key\'. (547) (SQLExecute)'); 1994)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/instacart_etl_dag.py", line 253, in etl_dim_order_products
+    cursor.executemany(f"""
+pyodbc.IntegrityError: ('23000', '[23000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint "fk_order_products_orders". The conflict occurred in database "InstacartDW", table "dbo.dim_orders", column \'order_key\'. (547) (SQLExecute)')
+[2024-12-17T23:44:08.145+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-12-17T23:44:08.372+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-17T23:44:08.380+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

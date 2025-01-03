@@ -1,0 +1,19 @@
+[2024-12-25T21:55:38.462+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-25T21:55:38.482+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instacart_etl.etl_dim_orders manual__2024-12-25T21:29:20.970210+00:00 [queued]>
+[2024-12-25T21:55:38.492+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instacart_etl.etl_dim_orders manual__2024-12-25T21:29:20.970210+00:00 [queued]>
+[2024-12-25T21:55:38.493+0000] {taskinstance.py:2866} INFO - Starting attempt 2 of 2
+[2024-12-25T21:55:38.510+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): etl_dim_orders> on 2024-12-25 21:29:20.970210+00:00
+[2024-12-25T21:55:38.521+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=3638) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-12-25T21:55:38.521+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'instacart_etl', 'etl_dim_orders', 'manual__2024-12-25T21:29:20.970210+00:00', '--job-id', '249', '--raw', '--subdir', 'DAGS_FOLDER/instacart_etl_dag.py', '--cfg-path', '/tmp/tmphk7jgudm']
+[2024-12-25T21:55:38.523+0000] {standard_task_runner.py:72} INFO - Started process 3640 to run task
+[2024-12-25T21:55:38.524+0000] {standard_task_runner.py:105} INFO - Job 249: Subtask etl_dim_orders
+[2024-12-25T21:55:38.587+0000] {task_command.py:467} INFO - Running <TaskInstance: instacart_etl.etl_dim_orders manual__2024-12-25T21:29:20.970210+00:00 [running]> on host 53a83a5c1c65
+[2024-12-25T21:55:38.692+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='instacart_etl' AIRFLOW_CTX_TASK_ID='etl_dim_orders' AIRFLOW_CTX_EXECUTION_DATE='2024-12-25T21:29:20.970210+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-25T21:29:20.970210+00:00'
+[2024-12-25T21:55:38.694+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-25T21:57:29.741+0000] {local_task_job_runner.py:346} WARNING - State of this instance has been externally set to removed. Terminating instance.
+[2024-12-25T21:57:29.746+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-12-25T21:57:29.751+0000] {process_utils.py:132} INFO - Sending 15 to group 3640. PIDs of all processes in the group: [3640]
+[2024-12-25T21:57:29.752+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 3640
+[2024-12-25T21:57:29.753+0000] {taskinstance.py:3093} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-12-25T21:57:30.396+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-25T21:57:30.447+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3640, status='terminated', exitcode=0, started='21:55:38') (3640) terminated with exit code 0

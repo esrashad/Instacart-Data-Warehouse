@@ -1,0 +1,105 @@
+[2024-12-18T00:03:32.999+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-18T00:03:33.028+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instacart_etl.etl_dim_orders manual__2024-12-18T00:02:59.999906+00:00 [queued]>
+[2024-12-18T00:03:33.043+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instacart_etl.etl_dim_orders manual__2024-12-18T00:02:59.999906+00:00 [queued]>
+[2024-12-18T00:03:33.044+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-18T00:03:33.073+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): etl_dim_orders> on 2024-12-18 00:02:59.999906+00:00
+[2024-12-18T00:03:33.090+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=3131) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-12-18T00:03:33.092+0000] {standard_task_runner.py:72} INFO - Started process 3133 to run task
+[2024-12-18T00:03:33.089+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'instacart_etl', 'etl_dim_orders', 'manual__2024-12-18T00:02:59.999906+00:00', '--job-id', '124', '--raw', '--subdir', 'DAGS_FOLDER/instacart_etl_dag.py', '--cfg-path', '/tmp/tmp23d0l9h0']
+[2024-12-18T00:03:33.092+0000] {standard_task_runner.py:105} INFO - Job 124: Subtask etl_dim_orders
+[2024-12-18T00:03:33.166+0000] {task_command.py:467} INFO - Running <TaskInstance: instacart_etl.etl_dim_orders manual__2024-12-18T00:02:59.999906+00:00 [running]> on host 0040d02929fc
+[2024-12-18T00:03:33.317+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='instacart_etl' AIRFLOW_CTX_TASK_ID='etl_dim_orders' AIRFLOW_CTX_EXECUTION_DATE='2024-12-18T00:02:59.999906+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-18T00:02:59.999906+00:00'
+[2024-12-18T00:03:33.320+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-18T00:03:33.566+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 1
+[2024-12-18T00:04:04.524+0000] {logging_mixin.py:190} INFO - Chunk 1: Batch 1 - 10000 rows inserted
+[2024-12-18T00:04:05.017+0000] {logging_mixin.py:190} INFO - Chunk 1: Batch 2 - 10000 rows inserted
+[2024-12-18T00:04:05.641+0000] {logging_mixin.py:190} INFO - Chunk 1: Batch 3 - 10000 rows inserted
+[2024-12-18T00:04:06.166+0000] {logging_mixin.py:190} INFO - Chunk 1: Batch 4 - 10000 rows inserted
+[2024-12-18T00:04:06.689+0000] {logging_mixin.py:190} INFO - Chunk 1: Batch 5 - 10000 rows inserted
+[2024-12-18T00:04:06.743+0000] {logging_mixin.py:190} INFO - Chunk 1 completed. Total rows processed: 50000
+[2024-12-18T00:04:06.803+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 2
+[2024-12-18T00:04:35.723+0000] {logging_mixin.py:190} INFO - Chunk 2: Batch 1 - 10000 rows inserted
+[2024-12-18T00:04:36.186+0000] {logging_mixin.py:190} INFO - Chunk 2: Batch 2 - 10000 rows inserted
+[2024-12-18T00:04:36.643+0000] {logging_mixin.py:190} INFO - Chunk 2: Batch 3 - 10000 rows inserted
+[2024-12-18T00:04:37.105+0000] {logging_mixin.py:190} INFO - Chunk 2: Batch 4 - 10000 rows inserted
+[2024-12-18T00:04:37.582+0000] {logging_mixin.py:190} INFO - Chunk 2: Batch 5 - 10000 rows inserted
+[2024-12-18T00:04:37.631+0000] {logging_mixin.py:190} INFO - Chunk 2 completed. Total rows processed: 50000
+[2024-12-18T00:04:37.665+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 3
+[2024-12-18T00:05:12.900+0000] {logging_mixin.py:190} INFO - Chunk 3: Batch 1 - 10000 rows inserted
+[2024-12-18T00:05:13.419+0000] {logging_mixin.py:190} INFO - Chunk 3: Batch 2 - 10000 rows inserted
+[2024-12-18T00:05:13.847+0000] {logging_mixin.py:190} INFO - Chunk 3: Batch 3 - 10000 rows inserted
+[2024-12-18T00:05:14.366+0000] {logging_mixin.py:190} INFO - Chunk 3: Batch 4 - 10000 rows inserted
+[2024-12-18T00:05:14.940+0000] {logging_mixin.py:190} INFO - Chunk 3: Batch 5 - 10000 rows inserted
+[2024-12-18T00:05:15.007+0000] {logging_mixin.py:190} INFO - Chunk 3 completed. Total rows processed: 50000
+[2024-12-18T00:05:15.045+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 4
+[2024-12-18T00:05:44.481+0000] {logging_mixin.py:190} INFO - Chunk 4: Batch 1 - 10000 rows inserted
+[2024-12-18T00:05:44.942+0000] {logging_mixin.py:190} INFO - Chunk 4: Batch 2 - 10000 rows inserted
+[2024-12-18T00:05:45.462+0000] {logging_mixin.py:190} INFO - Chunk 4: Batch 3 - 10000 rows inserted
+[2024-12-18T00:05:45.892+0000] {logging_mixin.py:190} INFO - Chunk 4: Batch 4 - 10000 rows inserted
+[2024-12-18T00:05:46.426+0000] {logging_mixin.py:190} INFO - Chunk 4: Batch 5 - 10000 rows inserted
+[2024-12-18T00:05:46.473+0000] {logging_mixin.py:190} INFO - Chunk 4 completed. Total rows processed: 50000
+[2024-12-18T00:05:46.526+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 5
+[2024-12-18T00:06:16.800+0000] {logging_mixin.py:190} INFO - Chunk 5: Batch 1 - 10000 rows inserted
+[2024-12-18T00:06:17.293+0000] {logging_mixin.py:190} INFO - Chunk 5: Batch 2 - 10000 rows inserted
+[2024-12-18T00:06:17.793+0000] {logging_mixin.py:190} INFO - Chunk 5: Batch 3 - 10000 rows inserted
+[2024-12-18T00:06:18.700+0000] {logging_mixin.py:190} INFO - Chunk 5: Batch 4 - 10000 rows inserted
+[2024-12-18T00:06:19.447+0000] {logging_mixin.py:190} INFO - Chunk 5: Batch 5 - 10000 rows inserted
+[2024-12-18T00:06:19.499+0000] {logging_mixin.py:190} INFO - Chunk 5 completed. Total rows processed: 50000
+[2024-12-18T00:06:19.534+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 6
+[2024-12-18T00:06:48.401+0000] {logging_mixin.py:190} INFO - Chunk 6: Batch 1 - 10000 rows inserted
+[2024-12-18T00:06:48.946+0000] {logging_mixin.py:190} INFO - Chunk 6: Batch 2 - 10000 rows inserted
+[2024-12-18T00:06:49.407+0000] {logging_mixin.py:190} INFO - Chunk 6: Batch 3 - 10000 rows inserted
+[2024-12-18T00:06:49.942+0000] {logging_mixin.py:190} INFO - Chunk 6: Batch 4 - 10000 rows inserted
+[2024-12-18T00:06:50.445+0000] {logging_mixin.py:190} INFO - Chunk 6: Batch 5 - 10000 rows inserted
+[2024-12-18T00:06:50.491+0000] {logging_mixin.py:190} INFO - Chunk 6 completed. Total rows processed: 50000
+[2024-12-18T00:06:50.526+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 7
+[2024-12-18T00:07:18.255+0000] {logging_mixin.py:190} INFO - Chunk 7: Batch 1 - 10000 rows inserted
+[2024-12-18T00:07:18.744+0000] {logging_mixin.py:190} INFO - Chunk 7: Batch 2 - 10000 rows inserted
+[2024-12-18T00:07:19.249+0000] {logging_mixin.py:190} INFO - Chunk 7: Batch 3 - 10000 rows inserted
+[2024-12-18T00:07:19.748+0000] {logging_mixin.py:190} INFO - Chunk 7: Batch 4 - 10000 rows inserted
+[2024-12-18T00:07:20.165+0000] {logging_mixin.py:190} INFO - Chunk 7: Batch 5 - 10000 rows inserted
+[2024-12-18T00:07:20.205+0000] {logging_mixin.py:190} INFO - Chunk 7 completed. Total rows processed: 50000
+[2024-12-18T00:07:20.237+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 8
+[2024-12-18T00:07:47.671+0000] {logging_mixin.py:190} INFO - Chunk 8: Batch 1 - 10000 rows inserted
+[2024-12-18T00:07:48.141+0000] {logging_mixin.py:190} INFO - Chunk 8: Batch 2 - 10000 rows inserted
+[2024-12-18T00:07:48.648+0000] {logging_mixin.py:190} INFO - Chunk 8: Batch 3 - 10000 rows inserted
+[2024-12-18T00:07:49.202+0000] {logging_mixin.py:190} INFO - Chunk 8: Batch 4 - 10000 rows inserted
+[2024-12-18T00:07:49.731+0000] {logging_mixin.py:190} INFO - Chunk 8: Batch 5 - 10000 rows inserted
+[2024-12-18T00:07:49.785+0000] {logging_mixin.py:190} INFO - Chunk 8 completed. Total rows processed: 50000
+[2024-12-18T00:07:49.821+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 9
+[2024-12-18T00:08:18.286+0000] {logging_mixin.py:190} INFO - Chunk 9: Batch 1 - 10000 rows inserted
+[2024-12-18T00:08:18.853+0000] {logging_mixin.py:190} INFO - Chunk 9: Batch 2 - 10000 rows inserted
+[2024-12-18T00:08:19.580+0000] {logging_mixin.py:190} INFO - Chunk 9: Batch 3 - 10000 rows inserted
+[2024-12-18T00:08:20.121+0000] {logging_mixin.py:190} INFO - Chunk 9: Batch 4 - 10000 rows inserted
+[2024-12-18T00:08:20.718+0000] {logging_mixin.py:190} INFO - Chunk 9: Batch 5 - 10000 rows inserted
+[2024-12-18T00:08:20.758+0000] {logging_mixin.py:190} INFO - Chunk 9 completed. Total rows processed: 50000
+[2024-12-18T00:08:20.789+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 10
+[2024-12-18T00:08:48.374+0000] {logging_mixin.py:190} INFO - Chunk 10: Batch 1 - 10000 rows inserted
+[2024-12-18T00:08:48.965+0000] {logging_mixin.py:190} INFO - Chunk 10: Batch 2 - 10000 rows inserted
+[2024-12-18T00:08:49.565+0000] {logging_mixin.py:190} INFO - Chunk 10: Batch 3 - 10000 rows inserted
+[2024-12-18T00:08:50.141+0000] {logging_mixin.py:190} INFO - Chunk 10: Batch 4 - 10000 rows inserted
+[2024-12-18T00:08:50.730+0000] {logging_mixin.py:190} INFO - Chunk 10: Batch 5 - 10000 rows inserted
+[2024-12-18T00:08:50.792+0000] {logging_mixin.py:190} INFO - Chunk 10 completed. Total rows processed: 50000
+[2024-12-18T00:08:50.811+0000] {logging_mixin.py:190} INFO - 
+Processing Chunk 11
+[2024-12-18T00:09:05.732+0000] {logging_mixin.py:190} INFO - Chunk 11: Batch 1 - 10000 rows inserted
+[2024-12-18T00:09:06.195+0000] {logging_mixin.py:190} INFO - Chunk 11: Batch 2 - 10000 rows inserted
+[2024-12-18T00:09:06.437+0000] {logging_mixin.py:190} INFO - Chunk 11: Batch 3 - 4287 rows inserted
+[2024-12-18T00:09:06.479+0000] {logging_mixin.py:190} INFO - Chunk 11 completed. Total rows processed: 24287
+[2024-12-18T00:09:06.488+0000] {logging_mixin.py:190} INFO - ETL Process for Orders Completed.
+[2024-12-18T00:09:06.495+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-18T00:09:06.513+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-18T00:09:06.514+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instacart_etl, task_id=etl_dim_orders, run_id=manual__2024-12-18T00:02:59.999906+00:00, execution_date=20241218T000259, start_date=20241218T000333, end_date=20241218T000906
+[2024-12-18T00:09:06.579+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-18T00:09:06.610+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-18T00:09:06.617+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,19 @@
+[2024-12-05T09:07:48.114+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-05T09:07:48.131+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instacart_etl_pl.etl_dim_aisle manual__2024-12-05T09:07:46.514629+00:00 [queued]>
+[2024-12-05T09:07:48.140+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instacart_etl_pl.etl_dim_aisle manual__2024-12-05T09:07:46.514629+00:00 [queued]>
+[2024-12-05T09:07:48.141+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-05T09:07:48.158+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): etl_dim_aisle> on 2024-12-05 09:07:46.514629+00:00
+[2024-12-05T09:07:48.167+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=4894) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-12-05T09:07:48.167+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'instacart_etl_pl', 'etl_dim_aisle', 'manual__2024-12-05T09:07:46.514629+00:00', '--job-id', '429', '--raw', '--subdir', 'DAGS_FOLDER/instacart_etl_dag.py', '--cfg-path', '/tmp/tmpvqrgs5dn']
+[2024-12-05T09:07:48.169+0000] {standard_task_runner.py:72} INFO - Started process 4898 to run task
+[2024-12-05T09:07:48.171+0000] {standard_task_runner.py:105} INFO - Job 429: Subtask etl_dim_aisle
+[2024-12-05T09:07:48.231+0000] {task_command.py:467} INFO - Running <TaskInstance: instacart_etl_pl.etl_dim_aisle manual__2024-12-05T09:07:46.514629+00:00 [running]> on host 58313fa44d8d
+[2024-12-05T09:07:48.343+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='instacart_etl_pl' AIRFLOW_CTX_TASK_ID='etl_dim_aisle' AIRFLOW_CTX_EXECUTION_DATE='2024-12-05T09:07:46.514629+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-05T09:07:46.514629+00:00'
+[2024-12-05T09:07:48.345+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-05T09:07:48.383+0000] {base.py:84} INFO - Retrieving connection 'mssql_default'
+[2024-12-05T09:07:48.582+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-05T09:07:48.594+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-05T09:07:48.595+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instacart_etl_pl, task_id=etl_dim_aisle, run_id=manual__2024-12-05T09:07:46.514629+00:00, execution_date=20241205T090746, start_date=20241205T090748, end_date=20241205T090748
+[2024-12-05T09:07:48.628+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-05T09:07:48.650+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-05T09:07:48.656+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

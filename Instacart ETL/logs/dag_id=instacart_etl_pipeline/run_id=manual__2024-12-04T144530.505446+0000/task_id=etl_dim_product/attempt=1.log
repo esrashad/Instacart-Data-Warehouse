@@ -1,0 +1,32 @@
+[2024-12-04T14:45:37.063+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-04T14:45:37.080+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instacart_etl_pipeline.etl_dim_product manual__2024-12-04T14:45:30.505446+00:00 [queued]>
+[2024-12-04T14:45:37.089+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instacart_etl_pipeline.etl_dim_product manual__2024-12-04T14:45:30.505446+00:00 [queued]>
+[2024-12-04T14:45:37.090+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-04T14:45:37.108+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): etl_dim_product> on 2024-12-04 14:45:30.505446+00:00
+[2024-12-04T14:45:37.118+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=10462) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-12-04T14:45:37.119+0000] {standard_task_runner.py:72} INFO - Started process 10464 to run task
+[2024-12-04T14:45:37.118+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'instacart_etl_pipeline', 'etl_dim_product', 'manual__2024-12-04T14:45:30.505446+00:00', '--job-id', '206', '--raw', '--subdir', 'DAGS_FOLDER/instacart_etl_dag.py', '--cfg-path', '/tmp/tmpc_oc669f']
+[2024-12-04T14:45:37.120+0000] {standard_task_runner.py:105} INFO - Job 206: Subtask etl_dim_product
+[2024-12-04T14:45:37.172+0000] {task_command.py:467} INFO - Running <TaskInstance: instacart_etl_pipeline.etl_dim_product manual__2024-12-04T14:45:30.505446+00:00 [running]> on host e64be71b3b6d
+[2024-12-04T14:45:37.272+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='instacart_etl_pipeline' AIRFLOW_CTX_TASK_ID='etl_dim_product' AIRFLOW_CTX_EXECUTION_DATE='2024-12-04T14:45:30.505446+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-04T14:45:30.505446+00:00'
+[2024-12-04T14:45:37.275+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-04T14:45:37.303+0000] {base.py:84} INFO - Retrieving connection 'mssql_default'
+[2024-12-04T14:45:37.472+0000] {logging_mixin.py:190} INFO - Processing foreign key: aisle_key, Reference Table: dim_aisle
+[2024-12-04T14:45:37.484+0000] {logging_mixin.py:190} INFO - Foreign Key Map: {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, 10: 10, 11: 11, 12: 12, 13: 13, 14: 14, 15: 15, 16: 16, 17: 17, 18: 18, 19: 19, 20: 20, 21: 21, 22: 22, 23: 23, 24: 24, 25: 25, 26: 26, 27: 27, 28: 28, 29: 29, 30: 30, 31: 31, 32: 32, 33: 33, 34: 34, 35: 35, 36: 36, 37: 37, 38: 38, 39: 39, 40: 40, 41: 41, 42: 42, 43: 43, 44: 44, 45: 45, 46: 46, 47: 47, 48: 48, 49: 49, 50: 50, 51: 51, 52: 52, 53: 53, 54: 54, 55: 55, 56: 56, 57: 57, 58: 58, 59: 59, 60: 60, 61: 61, 62: 62, 63: 63, 64: 64, 65: 65, 66: 66, 67: 67, 68: 68, 69: 69, 70: 70, 71: 71, 72: 72, 73: 73, 74: 74, 75: 75, 76: 76, 77: 77, 78: 78, 79: 79, 80: 80, 81: 81, 82: 82, 83: 83, 84: 84, 85: 85, 86: 86, 87: 87, 88: 88, 89: 89, 90: 90, 91: 91, 92: 92, 93: 93, 94: 94, 95: 95, 96: 96, 97: 97, 98: 98, 99: 99, 100: 100, 101: 101, 102: 102, 103: 103, 104: 104, 105: 105, 106: 106, 107: 107, 108: 108, 109: 109, 110: 110, 111: 111, 112: 112, 113: 113, 114: 114, 115: 115, 116: 116, 117: 117, 118: 118, 119: 119, 120: 120, 121: 121, 122: 122, 123: 123, 124: 124, 125: 125, 126: 126, 127: 127, 128: 128, 129: 129, 130: 130, 131: 131, 132: 132, 133: 133, 134: 134}
+[2024-12-04T14:45:37.488+0000] {logging_mixin.py:190} INFO - Unique IDs in source: [ 61 104  94  38   5  11  98 116 120 115  31 119  74  56 103  35  79  63
+  40  20  49  47   3  41 127 121  81 123 107 131 106  69 100  64  78  83
+  58  66  87  14 105  22 134  23 111 128  50   9  96  92  89  88 130  26
+  77  65  12  95  19   7   6  97   2 112  10  51  13  75  70  93  34  62
+  21  29  45 118   4 108  37 109  91  24  67 132  25 129  46  16  52  17
+  73 122  42  59 126  33   1   8  82 114 124 117  72 110  85  44  80 101
+  84  30  27  90  48 133  53  28  68  43 125  57  15  55  36  54 102  60
+  99  18  39  71 113  86  32  76]
+[2024-12-04T14:45:37.503+0000] {logging_mixin.py:190} INFO - Processing foreign key: department_key, Reference Table: dim_department
+[2024-12-04T14:45:37.507+0000] {logging_mixin.py:190} INFO - Foreign Key Map: {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, 10: 10, 11: 11, 12: 12, 13: 13, 14: 14, 15: 15, 16: 16, 17: 17, 18: 18, 19: 19, 20: 20, 21: 21}
+[2024-12-04T14:45:37.510+0000] {logging_mixin.py:190} INFO - Unique IDs in source: [19 13  7  1 11 16 17 18 12  9  8 14 15  4 21  6 20  5  3  2 10]
+[2024-12-04T14:47:47.240+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-04T14:47:47.280+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-04T14:47:47.281+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instacart_etl_pipeline, task_id=etl_dim_product, run_id=manual__2024-12-04T14:45:30.505446+00:00, execution_date=20241204T144530, start_date=20241204T144537, end_date=20241204T144747
+[2024-12-04T14:47:47.342+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-04T14:47:47.361+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-04T14:47:47.366+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

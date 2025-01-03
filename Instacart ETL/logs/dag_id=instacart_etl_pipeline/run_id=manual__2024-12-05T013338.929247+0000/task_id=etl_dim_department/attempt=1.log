@@ -1,0 +1,47 @@
+[2024-12-05T01:33:45.085+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-05T01:33:45.103+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instacart_etl_pipeline.etl_dim_department manual__2024-12-05T01:33:38.929247+00:00 [queued]>
+[2024-12-05T01:33:45.114+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instacart_etl_pipeline.etl_dim_department manual__2024-12-05T01:33:38.929247+00:00 [queued]>
+[2024-12-05T01:33:45.115+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-05T01:33:45.137+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): etl_dim_department> on 2024-12-05 01:33:38.929247+00:00
+[2024-12-05T01:33:45.152+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=3166) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-12-05T01:33:45.154+0000] {standard_task_runner.py:72} INFO - Started process 3177 to run task
+[2024-12-05T01:33:45.152+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'instacart_etl_pipeline', 'etl_dim_department', 'manual__2024-12-05T01:33:38.929247+00:00', '--job-id', '349', '--raw', '--subdir', 'DAGS_FOLDER/instacart_etl_dag.py', '--cfg-path', '/tmp/tmp69k9qf91']
+[2024-12-05T01:33:45.155+0000] {standard_task_runner.py:105} INFO - Job 349: Subtask etl_dim_department
+[2024-12-05T01:33:45.222+0000] {task_command.py:467} INFO - Running <TaskInstance: instacart_etl_pipeline.etl_dim_department manual__2024-12-05T01:33:38.929247+00:00 [running]> on host f9e7195a95b4
+[2024-12-05T01:33:45.339+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='instacart_etl_pipeline' AIRFLOW_CTX_TASK_ID='etl_dim_department' AIRFLOW_CTX_EXECUTION_DATE='2024-12-05T01:33:38.929247+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-05T01:33:38.929247+00:00'
+[2024-12-05T01:33:45.340+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-05T01:33:45.377+0000] {base.py:84} INFO - Retrieving connection 'mssql_default'
+[2024-12-05T01:33:45.570+0000] {logging_mixin.py:190} INFO - Initial DataFrame from /opt/***/data/departments.csv/departments.csv:
+   department_id department
+0              1     frozen
+1              2      other
+2              3     bakery
+3              4    produce
+4              5    alcohol
+[2024-12-05T01:33:45.572+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=1, Name=frozen, FK Values={}
+[2024-12-05T01:33:45.611+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=2, Name=other, FK Values={}
+[2024-12-05T01:33:45.615+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=3, Name=bakery, FK Values={}
+[2024-12-05T01:33:45.618+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=4, Name=produce, FK Values={}
+[2024-12-05T01:33:45.622+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=5, Name=alcohol, FK Values={}
+[2024-12-05T01:33:45.628+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=6, Name=international, FK Values={}
+[2024-12-05T01:33:45.642+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=7, Name=beverages, FK Values={}
+[2024-12-05T01:33:45.649+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=8, Name=pets, FK Values={}
+[2024-12-05T01:33:45.655+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=9, Name=dry goods pasta, FK Values={}
+[2024-12-05T01:33:45.665+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=10, Name=bulk, FK Values={}
+[2024-12-05T01:33:45.670+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=11, Name=personal care, FK Values={}
+[2024-12-05T01:33:45.677+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=12, Name=meat seafood, FK Values={}
+[2024-12-05T01:33:45.690+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=13, Name=pantry, FK Values={}
+[2024-12-05T01:33:45.699+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=14, Name=breakfast, FK Values={}
+[2024-12-05T01:33:45.706+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=15, Name=canned goods, FK Values={}
+[2024-12-05T01:33:45.715+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=16, Name=dairy eggs, FK Values={}
+[2024-12-05T01:33:45.722+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=17, Name=household, FK Values={}
+[2024-12-05T01:33:45.728+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=18, Name=babies, FK Values={}
+[2024-12-05T01:33:45.734+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=19, Name=snacks, FK Values={}
+[2024-12-05T01:33:45.740+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=20, Name=deli, FK Values={}
+[2024-12-05T01:33:45.748+0000] {logging_mixin.py:190} INFO - Preparing to insert: ID=21, Name=missing, FK Values={}
+[2024-12-05T01:33:45.767+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-05T01:33:45.805+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-05T01:33:45.806+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instacart_etl_pipeline, task_id=etl_dim_department, run_id=manual__2024-12-05T01:33:38.929247+00:00, execution_date=20241205T013338, start_date=20241205T013345, end_date=20241205T013345
+[2024-12-05T01:33:45.851+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-05T01:33:45.881+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-05T01:33:45.888+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

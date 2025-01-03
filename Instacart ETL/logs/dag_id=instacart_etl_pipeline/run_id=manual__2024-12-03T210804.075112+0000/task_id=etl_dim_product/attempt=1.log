@@ -1,0 +1,28 @@
+[2024-12-03T21:08:12.452+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-03T21:08:12.518+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instacart_etl_pipeline.etl_dim_product manual__2024-12-03T21:08:04.075112+00:00 [queued]>
+[2024-12-03T21:08:12.536+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instacart_etl_pipeline.etl_dim_product manual__2024-12-03T21:08:04.075112+00:00 [queued]>
+[2024-12-03T21:08:12.537+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-03T21:08:12.607+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): etl_dim_product> on 2024-12-03 21:08:04.075112+00:00
+[2024-12-03T21:08:12.653+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=380) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-12-03T21:08:12.667+0000] {standard_task_runner.py:72} INFO - Started process 386 to run task
+[2024-12-03T21:08:12.646+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'instacart_etl_pipeline', 'etl_dim_product', 'manual__2024-12-03T21:08:04.075112+00:00', '--job-id', '105', '--raw', '--subdir', 'DAGS_FOLDER/instacart_etl_dag.py', '--cfg-path', '/tmp/tmpszeh8uqe']
+[2024-12-03T21:08:12.673+0000] {standard_task_runner.py:105} INFO - Job 105: Subtask etl_dim_product
+[2024-12-03T21:08:13.918+0000] {task_command.py:467} INFO - Running <TaskInstance: instacart_etl_pipeline.etl_dim_product manual__2024-12-03T21:08:04.075112+00:00 [running]> on host e64be71b3b6d
+[2024-12-03T21:08:18.314+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='instacart_etl_pipeline' AIRFLOW_CTX_TASK_ID='etl_dim_product' AIRFLOW_CTX_EXECUTION_DATE='2024-12-03T21:08:04.075112+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-03T21:08:04.075112+00:00'
+[2024-12-03T21:08:18.323+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-03T21:08:18.410+0000] {base.py:84} INFO - Retrieving connection 'mssql_default'
+[2024-12-03T21:08:19.192+0000] {logging_mixin.py:190} INFO - Columns in CSV: Index(['product_id', 'product_name', 'aisle_id', 'department_id'], dtype='object')
+[2024-12-03T21:08:19.304+0000] {logging_mixin.py:190} INFO - First few rows:    product_id  ... department_id
+0           1  ...            19
+1           2  ...            13
+2           3  ...             7
+3           4  ...             1
+4           5  ...            13
+
+[5 rows x 4 columns]
+[2024-12-03T21:10:35.804+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-03T21:10:36.834+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-03T21:10:36.851+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instacart_etl_pipeline, task_id=etl_dim_product, run_id=manual__2024-12-03T21:08:04.075112+00:00, execution_date=20241203T210804, start_date=20241203T210812, end_date=20241203T211036
+[2024-12-03T21:10:37.342+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-03T21:10:37.663+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-03T21:10:37.674+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,47 @@
+[2024-12-03T21:24:22.046+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-03T21:24:22.067+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instacart_etl_pipeline.etl_dim_department manual__2024-12-03T21:24:19.409288+00:00 [queued]>
+[2024-12-03T21:24:22.084+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instacart_etl_pipeline.etl_dim_department manual__2024-12-03T21:24:19.409288+00:00 [queued]>
+[2024-12-03T21:24:22.085+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-03T21:24:22.115+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): etl_dim_department> on 2024-12-03 21:24:19.409288+00:00
+[2024-12-03T21:24:22.134+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=783) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-12-03T21:24:22.135+0000] {standard_task_runner.py:72} INFO - Started process 785 to run task
+[2024-12-03T21:24:22.135+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'instacart_etl_pipeline', 'etl_dim_department', 'manual__2024-12-03T21:24:19.409288+00:00', '--job-id', '110', '--raw', '--subdir', 'DAGS_FOLDER/instacart_etl_dag.py', '--cfg-path', '/tmp/tmpc7u3h9_p']
+[2024-12-03T21:24:22.140+0000] {standard_task_runner.py:105} INFO - Job 110: Subtask etl_dim_department
+[2024-12-03T21:24:22.235+0000] {task_command.py:467} INFO - Running <TaskInstance: instacart_etl_pipeline.etl_dim_department manual__2024-12-03T21:24:19.409288+00:00 [running]> on host e64be71b3b6d
+[2024-12-03T21:24:22.369+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='instacart_etl_pipeline' AIRFLOW_CTX_TASK_ID='etl_dim_department' AIRFLOW_CTX_EXECUTION_DATE='2024-12-03T21:24:19.409288+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-03T21:24:19.409288+00:00'
+[2024-12-03T21:24:22.371+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-03T21:24:22.399+0000] {base.py:84} INFO - Retrieving connection 'mssql_default'
+[2024-12-03T21:24:22.589+0000] {logging_mixin.py:190} INFO - Columns in CSV: Index(['department_id', 'department'], dtype='object')
+[2024-12-03T21:24:22.602+0000] {logging_mixin.py:190} INFO - First few rows:    department_id department
+0              1     frozen
+1              2      other
+2              3     bakery
+3              4    produce
+4              5    alcohol
+[2024-12-03T21:24:22.610+0000] {logging_mixin.py:190} INFO - Processing row: 1, frozen
+[2024-12-03T21:24:22.622+0000] {logging_mixin.py:190} INFO - Processing row: 2, other
+[2024-12-03T21:24:22.625+0000] {logging_mixin.py:190} INFO - Processing row: 3, bakery
+[2024-12-03T21:24:22.627+0000] {logging_mixin.py:190} INFO - Processing row: 4, produce
+[2024-12-03T21:24:22.629+0000] {logging_mixin.py:190} INFO - Processing row: 5, alcohol
+[2024-12-03T21:24:22.631+0000] {logging_mixin.py:190} INFO - Processing row: 6, international
+[2024-12-03T21:24:22.633+0000] {logging_mixin.py:190} INFO - Processing row: 7, beverages
+[2024-12-03T21:24:22.637+0000] {logging_mixin.py:190} INFO - Processing row: 8, pets
+[2024-12-03T21:24:22.641+0000] {logging_mixin.py:190} INFO - Processing row: 9, dry goods pasta
+[2024-12-03T21:24:22.643+0000] {logging_mixin.py:190} INFO - Processing row: 10, bulk
+[2024-12-03T21:24:22.645+0000] {logging_mixin.py:190} INFO - Processing row: 11, personal care
+[2024-12-03T21:24:22.647+0000] {logging_mixin.py:190} INFO - Processing row: 12, meat seafood
+[2024-12-03T21:24:22.649+0000] {logging_mixin.py:190} INFO - Processing row: 13, pantry
+[2024-12-03T21:24:22.650+0000] {logging_mixin.py:190} INFO - Processing row: 14, breakfast
+[2024-12-03T21:24:22.652+0000] {logging_mixin.py:190} INFO - Processing row: 15, canned goods
+[2024-12-03T21:24:22.656+0000] {logging_mixin.py:190} INFO - Processing row: 16, dairy eggs
+[2024-12-03T21:24:22.658+0000] {logging_mixin.py:190} INFO - Processing row: 17, household
+[2024-12-03T21:24:22.660+0000] {logging_mixin.py:190} INFO - Processing row: 18, babies
+[2024-12-03T21:24:22.662+0000] {logging_mixin.py:190} INFO - Processing row: 19, snacks
+[2024-12-03T21:24:22.664+0000] {logging_mixin.py:190} INFO - Processing row: 20, deli
+[2024-12-03T21:24:22.666+0000] {logging_mixin.py:190} INFO - Processing row: 21, missing
+[2024-12-03T21:24:22.673+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-03T21:24:22.682+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-03T21:24:22.682+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instacart_etl_pipeline, task_id=etl_dim_department, run_id=manual__2024-12-03T21:24:19.409288+00:00, execution_date=20241203T212419, start_date=20241203T212422, end_date=20241203T212422
+[2024-12-03T21:24:22.716+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-03T21:24:22.733+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-03T21:24:22.739+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

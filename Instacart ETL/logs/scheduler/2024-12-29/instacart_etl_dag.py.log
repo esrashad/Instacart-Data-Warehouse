@@ -1,0 +1,7 @@
+[2024-12-29T00:10:41.100+0000] {processor.py:186} INFO - Started process (PID=3463) to work on /opt/airflow/dags/instacart_etl_dag.py
+[2024-12-29T00:10:41.137+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/instacart_etl_dag.py for tasks to queue
+[2024-12-29T00:10:41.155+0000] {logging_mixin.py:190} INFO - [2024-12-29T00:10:41.155+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/instacart_etl_dag.py
+[2024-12-31T13:02:46.809+0000] {processor.py:925} INFO - DAG(s) 'instacart_etl' retrieved from /opt/airflow/dags/instacart_etl_dag.py
+[2024-12-31T13:02:47.706+0000] {logging_mixin.py:190} INFO - [2024-12-31T13:02:47.705+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-31T13:02:48.243+0000] {logging_mixin.py:190} INFO - [2024-12-31T13:02:48.243+0000] {dag.py:4180} INFO - Setting next_dagrun for instacart_etl to None, run_after=None
+[2024-12-31T13:02:51.695+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/instacart_etl_dag.py took 7.966 seconds

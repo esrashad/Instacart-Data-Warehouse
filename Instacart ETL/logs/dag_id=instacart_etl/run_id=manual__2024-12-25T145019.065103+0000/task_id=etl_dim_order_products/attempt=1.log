@@ -1,0 +1,18 @@
+[2024-12-25T14:56:22.734+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-25T14:56:22.755+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instacart_etl.etl_dim_order_products manual__2024-12-25T14:50:19.065103+00:00 [queued]>
+[2024-12-25T14:56:22.766+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instacart_etl.etl_dim_order_products manual__2024-12-25T14:50:19.065103+00:00 [queued]>
+[2024-12-25T14:56:22.767+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-25T14:56:22.788+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): etl_dim_order_products> on 2024-12-25 14:50:19.065103+00:00
+[2024-12-25T14:56:22.800+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=2301) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-12-25T14:56:22.802+0000] {standard_task_runner.py:72} INFO - Started process 2303 to run task
+[2024-12-25T14:56:22.800+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'instacart_etl', 'etl_dim_order_products', 'manual__2024-12-25T14:50:19.065103+00:00', '--job-id', '222', '--raw', '--subdir', 'DAGS_FOLDER/instacart_etl_dag.py', '--cfg-path', '/tmp/tmpm4k9lsdh']
+[2024-12-25T14:56:22.804+0000] {standard_task_runner.py:105} INFO - Job 222: Subtask etl_dim_order_products
+[2024-12-25T14:56:22.858+0000] {task_command.py:467} INFO - Running <TaskInstance: instacart_etl.etl_dim_order_products manual__2024-12-25T14:50:19.065103+00:00 [running]> on host f1d04a902af0
+[2024-12-25T14:56:22.960+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='instacart_etl' AIRFLOW_CTX_TASK_ID='etl_dim_order_products' AIRFLOW_CTX_EXECUTION_DATE='2024-12-25T14:50:19.065103+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-25T14:50:19.065103+00:00'
+[2024-12-25T14:56:22.962+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-25T15:00:49.031+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-25T15:00:49.149+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-25T15:00:49.153+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instacart_etl, task_id=etl_dim_order_products, run_id=manual__2024-12-25T14:50:19.065103+00:00, execution_date=20241225T145019, start_date=20241225T145622, end_date=20241225T150049
+[2024-12-25T15:00:49.265+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-25T15:00:49.317+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-25T15:00:49.324+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
