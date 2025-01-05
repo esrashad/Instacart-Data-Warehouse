@@ -20,6 +20,7 @@ The goal of this project is to transform raw CSV files into a well-structured da
 ![Screenshot 2025-01-02 150832](https://github.com/user-attachments/assets/0c8213c2-9a07-4c34-82bb-0c28bfb14831)
 
 #### Input Data
+**`Instacart ETL/instacart-market-basket-analysis`**
 - Departments: departments.csv
 - Aisles: aisles.csv
 - Products: products.csv
