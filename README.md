@@ -2,7 +2,7 @@
 This project implements an ETL pipeline for building and maintaining a data warehouse to analyze Instacart grocery order data. Using Apache Airflow for orchestration and Docker for containerization, the pipeline ingests, transforms, and loads data into SQL Server, creating dimension and fact tables for analytics.
 
 ### Solution Architecture Overview
-![image](https://github.com/user-attachments/assets/1104ed11-a773-47f1-b38f-81c031043cf1)
+![image](https://github.com/user-attachments/assets/d7b79c1c-c05a-4872-ab50-0efed2cbd867)
 
 ## Project Overview
 The goal of this project is to transform raw CSV files into a well-structured data warehouse that supports analysis and reporting. The pipeline extracts data from raw files, transforms it to ensure consistency and quality, and loads it into dimension and fact tables in SQL Server.
@@ -17,7 +17,7 @@ The goal of this project is to transform raw CSV files into a well-structured da
 1) Dimensional Tables: Process and load data into dimension tables (dim_date, dim_department, dim_aisle, dim_products, dim_user, dim_orders, dim_order_products).
 2) Fact Table: Aggregate data into the fact_instacart table for analysis.
 3) Dependencies: Tasks are orchestrated to respect dependencies between tables.
-![Screenshot 2025-01-02 150832](https://github.com/user-attachments/assets/0c8213c2-9a07-4c34-82bb-0c28bfb14831)
+![Screenshot 2025-01-02 150832](https://github.com/user-attachments/assets/0c8213c2-9a07-4c34-82bb-0c28bfb14831
 
 #### Input Data
 **`Instacart ETL/instacart-market-basket-analysis`**
